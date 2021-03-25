@@ -7,6 +7,20 @@ html {
 }
 
 
+/* Colors */
+
+/* 
+EXAMPLE OF HOW TO USE ROOT COLORS:
+background-color: var(--blue); 
+*/
+
+:root {
+    --primary: #495BFD;
+    --secondary: #252529; 
+    --light_grey: #F6F6F6;
+    --white: #FFFFFF;
+}
+
 
 
 /* Fonts Collection */
@@ -97,7 +111,7 @@ h4 {
 .buttontext {
   font-family: Gotham;
   font-style: medium;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
