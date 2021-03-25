@@ -12,8 +12,17 @@
     <div id="sidenav">
       <nav>
         <div id="close">
-          <button onclick="myFunction()">Use this to close</button>
+          <button onclick="myFunction()"></button>
         </div>
+
+        <a onclick="myFunction()" class="navbar-toggle-close" href="#">
+            <i class="icon">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </i>
+        </a>
+
         <div class="navtext">
           <a href="#">Home</a><br />
           <a href="#">About</a><br />
@@ -31,7 +40,15 @@
         </div>
       </nav>
     </div>
-    <button onclick="myFunction()">Try it</button>
+    <button onclick="myFunction()"></button>
+
+    <a onclick="myFunction()" class="navbar-toggle" href="#">
+        <i class="icon">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </i>
+    </a>
 
     <div class="section1">
       <div>
@@ -64,9 +81,9 @@
       function myFunction() {
         var x = document.getElementById("sidenav");
         if (x.style.right === "0px") {
-          x.style.right = "-1000px";
+            x.style.right = "-1000px";
         } else {
-          x.style.right = "0px";
+            x.style.right = "0px";
         }
       }
     </script>
