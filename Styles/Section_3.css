@@ -1,0 +1,49 @@
+.section3 {
+  width: 100vw;
+  height: 50vh;
+  padding-top: 33vh;
+  display: flex;
+}
+.section3_Body {
+  max-width: 40vw;
+  margin-left: 10vw;
+}
+.section3_Body h1 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.section3_Body p {
+  max-width: 436px;
+  width: 35vw;
+  margin-bottom: 50px;
+}
+.section3 #register {
+  border: 2px solid #252529;
+  padding: 15px 50px;
+  box-sizing: border-box;
+  width: fit-content;
+  border-radius: 2px;
+  background-color: #fff;
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  /* or 144% */
+  letter-spacing: 0.184615px;
+  color: #000000;
+  transition: ease-in 0.3s;
+}
+.section3 a:hover #register {
+  background-color: #485bfd;
+  color: #fff;
+  transition: ease-in 0.3s;
+  border: 2px solid #25252900;
+}
+.section3 a {
+  text-decoration: none;
+}
+#rsvpreg {
+  margin-top: 10vh;
+  margin-left: 30vw;
+}
