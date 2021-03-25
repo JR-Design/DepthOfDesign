@@ -1,38 +1,40 @@
 .section1 {
-    width: 100vw;
-    height: 50vh;
-    margin-top: 33vh;
-    display: flex;
+  width: 100vw;
+  height: 50vh;
+  margin-top: 33vh;
+  display: flex;
 }
-
 
 .section1 div {
-    width: 50vw;
+  width: 50vw;
 }
-
 
 .section1_Body {
-    max-width: 40vw;
-    margin-left: 10vw;
+  max-width: 40vw;
+  margin-left: 10vw;
 }
 .section1_Body h1 {
-    margin-top: 25px;
-    margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .section1_Body p {
-    max-width: 436px;
-    width: 35vw;
-    margin-bottom: 50px;
+  max-width: 436px;
+  width: 35vw;
+  margin-bottom: 50px;
 }
-
+.section1_Body button {
+  border: 2px solid #252529;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: #fff;
+}
 .section1_Logo {
-    display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
-    align-self: center;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  align-self: center;
 }
 .section1_Logo img {
-    width: 356px;
-    height: 275px;
+  width: 356px;
+  height: 275px;
 }
-
