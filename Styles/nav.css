@@ -1,5 +1,6 @@
 #sidenav {
   width: 43%;
+  max-width: 1000px;
   height: 100vh;
   background-color: var(--primary);
   position: fixed;
