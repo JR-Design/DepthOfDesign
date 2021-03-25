@@ -6,38 +6,37 @@ html {
   font-size: 62.5%;
 }
 
+
+
+
+/* Fonts Collection */
 @font-face {
     font-family: Noctis;
     src: url('../Fonts/Noctis-Heavy-trial.ttf') format('woff2');
 }
-
 @font-face {
     font-family: Gotham;
-    src: url(/Fonts/Gotham-Bold.otf);
+    src: url('../Fonts/Gotham-Bold.otf') format('otf');
     font-weight: bold;
 }
-
 @font-face {
     font-family: Gotham;
-    src: url(/Fonts/Gotham-Book.otf);
+    src: url('../Fonts/Gotham-Book.otf');
     font-weight: book;
 }
-
 @font-face {
     font-family: Gotham;
-    src: url(/Fonts/Gotham-Medium.otf);
+    src: url('../Fonts/Gotham-Medium.otf');
     font-weight: medium;
 }
-
 @font-face {
     font-family: Gotham;
-    src: url(/Fonts/Gotham-Light.otf);
+    src: url('../Fonts/Gotham-Light.otf');
     font-weight: light;
 }
-
 @font-face {
     font-family: Gotham;
-    src: url(/Fonts/Gotham-Bold.otf);
+    src: url('../Fonts/Gotham-Bold.otf');
     font-weight: bold;
 }
 
@@ -84,7 +83,7 @@ h4 {
 
   color: #000000;
 }
-#bigsubtitle {
+.bigsubtitle {
   font-family: Gotham;
   font-style: normal;
   font-weight: 300;
@@ -95,9 +94,9 @@ h4 {
 
   color: #000000;
 }
-#buttontext {
+.buttontext {
   font-family: Gotham;
-  font-style: normal;
+  font-style: medium;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -105,7 +104,7 @@ h4 {
 
   color: #000000;
 }
-#overline {
+.overline {
   font-family: Gotham;
   font-style: normal;
   font-weight: 500;
@@ -116,7 +115,7 @@ h4 {
 
   color: #000000;
 }
-#bodybig {
+.bodybig {
   font-family: Gotham;
   font-style: normal;
   font-weight: normal;
@@ -126,7 +125,7 @@ h4 {
 
   color: #000000;
 }
-#body {
+.body {
   font-family: Gotham;
   font-style: normal;
   font-weight: normal;
@@ -136,7 +135,7 @@ h4 {
 
   color: #000000;
 }
-#bodybold {
+.bodybold {
   font-family: Gotham;
   font-style: normal;
   font-weight: bold;
@@ -146,7 +145,7 @@ h4 {
 
   color: #000000;
 }
-#bodysmall {
+.bodysmall {
   font-family: Gotham;
   font-style: normal;
   font-weight: normal;
@@ -156,7 +155,7 @@ h4 {
 
   color: #000000;
 }
-#bodysmallbold {
+.bodysmallbold {
   font-family: Gotham;
   font-style: normal;
   font-weight: bold;
