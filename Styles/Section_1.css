@@ -22,11 +22,30 @@
   width: 35vw;
   margin-bottom: 50px;
 }
-.section1_Body button {
+.section1_Body #register {
   border: 2px solid #252529;
+  padding: 15px 50px;
   box-sizing: border-box;
+  width: fit-content;
   border-radius: 2px;
   background-color: #fff;
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  /* or 144% */
+  letter-spacing: 0.184615px;
+  color: #000000;
+}
+.section1_Body a:hover #register {
+  background-color: #485bfd;
+  color: #fff;
+  transition: ease-in 0.3s;
+  border: 2px solid #25252900;
+}
+.section1_Body a {
+  text-decoration: none;
 }
 .section1_Logo {
   display: flex;
