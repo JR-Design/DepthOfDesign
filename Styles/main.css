@@ -1,8 +1,10 @@
 @import 'Textstyles.css';
+@import 'Color.css';
 @import 'Nav.css';
 @import 'Section_1.css';
 @import 'Section_2.css';
 @import 'Section_3.css';
 @import 'Section_4.css';
 @import 'Section_5.css';
+@import 'StyleSheet.css';
 @import 'Footer.css';
