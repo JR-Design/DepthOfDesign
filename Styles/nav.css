@@ -1,0 +1,14 @@
+:root {
+  --primary: #495bfd;
+  --secondary: #252529;
+  --light_grey: #f6f6f6;
+  --white: #ffffff;
+}
+nav {
+  width: 43vw;
+  height: 100vh;
+  background-color: var(--primary);
+  position: fixed;
+  top: 0;
+  right: 0;
+}
