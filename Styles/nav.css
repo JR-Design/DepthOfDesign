@@ -6,3 +6,13 @@ nav {
   top: 0;
   right: 0;
 }
+.navtext {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 325;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.164102px;
+  text-transform: uppercase;
+  color: #fff;
+}
