@@ -37,6 +37,7 @@
   /* or 144% */
   letter-spacing: 0.184615px;
   color: #000000;
+  transition: ease-in 0.3s;
 }
 .section1_Body a:hover #register {
   background-color: #485bfd;
