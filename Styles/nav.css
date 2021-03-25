@@ -1,18 +1,58 @@
-nav {
-  width: 43vw;
+#sidenav {
+  width: 43%;
   height: 100vh;
   background-color: var(--primary);
   position: fixed;
   top: 0;
   right: 0;
+  overflow-x: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  transition-timing-function: ease-out;
 }
 .navtext {
   font-family: Gotham;
   font-style: normal;
   font-weight: 325;
   font-size: 36px;
-  line-height: 43px;
+  line-height: 72px;
   letter-spacing: 0.164102px;
   text-transform: uppercase;
   color: #fff;
+  margin-left: 110px;
+  margin-top: 30vh;
+}
+#line {
+  width: 50%;
+  height: 0px;
+  border: 3px solid #ffffff;
+  margin-left: 110px;
+  margin-top: 20%;
+}
+#navsocial {
+  margin-top: 10%;
+  margin-left: 110px;
+}
+#navsocial img {
+  margin-right: 40px;
+}
+#hashtag {
+  font-family: Noctis Trial;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 115%;
+  /* or 34px */
+
+  letter-spacing: -1px;
+  color: #fff;
+  margin-left: 110px;
+  margin-top: 10%;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+nav a:hover {
+  color: #919bf0;
 }

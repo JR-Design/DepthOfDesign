@@ -9,13 +9,29 @@
     <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-<<<<<<< Updated upstream
-=======
-    <nav>
-      <div class="navtext">Home</div>
-      <div class="navtext">About</div>
-      <div class="navtext">Register</div>
-    </nav>
+    <div id="sidenav">
+      <nav>
+        <div id="close">
+          <button onclick="myFunction()">Use this to close</button>
+        </div>
+        <div class="navtext">
+          <a href="#">Home</a><br />
+          <a href="#">About</a><br />
+          <a href="#">Register</a>
+        </div>
+        <div id="line"></div>
+        <div id="hashtag">
+          <a href="https://www.instagram.com/explore/tags/designdepth/">
+            #DesignDepth</a
+          >
+        </div>
+        <div id="navsocial">
+          <img src="/Images/facebook white.png" alt="Facebook" />
+          <img src="/Images/instagram white.png" alt="instagram" />
+        </div>
+      </nav>
+    </div>
+    <button onclick="myFunction()">Try it</button>
     <h1>Hello h1</h1>
     <h2>Hello h2</h2>
     <h3>Hello h3</h3>
@@ -28,27 +44,35 @@
     <p class="bodybold">Body Bold</p>
     <p class="bodysmall">Body Small</p>
     <p class="bodysmallbold">Body Small Bold</p>
->>>>>>> Stashed changes
 
     <div class="section1">
-        <div>
-            <div class="section1_Body"> 
-                <h1>Depth of Design</h1>
-                <p class="bodybig">A graphic design exhibition created by the
-                    graduating students to the thinking done
-                    throughout the design process.</p>
-                <br>
-                <button> Register in Advanced </button>
-            </div>
+      <div>
+        <div class="section1_Body">
+          <h1>Depth of Design</h1>
+          <p class="bodybig">
+            A graphic design exhibition created by the graduating students to
+            the thinking done throughout the design process.
+          </p>
+          <br />
+          <button>Register in Advanced</button>
         </div>
+      </div>
 
-        <div>
-            <div class="section1_Logo"> 
-                <img src="Images/Gradshow_2021_Logo_RGB_Colour.png" alt="">
-            </div>
-        </div> 
+      <div>
+        <div class="section1_Logo">
+          <img src="Images/Gradshow_2021_Logo_RGB_Colour.png" alt="" />
+        </div>
+      </div>
     </div>
-
-
+    <script>
+      function myFunction() {
+        var x = document.getElementById("sidenav");
+        if (x.style.width === "0%") {
+          x.style.width = "43%";
+        } else {
+          x.style.width = "0%";
+        }
+      }
+    </script>
   </body>
 </html>
