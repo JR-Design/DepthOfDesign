@@ -12,7 +12,7 @@
 
     <div id="sidenav">
       <nav>
-
+<div id="closeicon">
         <a onclick="myFunction()" class="navbar-toggle-close">
             <i class="icon">
                 <span class="line"></span>
@@ -20,7 +20,7 @@
                 <span class="line"></span>
             </i>
         </a>
-
+    </div>
         <div class="navtext">
           <a onclick="myFunction()" href="#">Home</a><br />
           <a onclick="myFunction()" href="#">About</a><br />
@@ -33,8 +33,8 @@
           >
         </div>
         <div id="navsocial">
-          <a href="https://www.facebook.com/cambriangraphicdesign"></a><img src="Images/facebookwhite.png" alt="Facebook" />
-          <a href=""></a><img src="Images/instagramwhite.png" alt="instagram" />
+          <a href="https://www.facebook.com/cambriangraphicdesign"><img src="Images/facebookwhite.png" alt="Facebook" /></a>
+          <a href=""><img src="Images/instagramwhite.png" alt="instagram" /></a>
         </div>
       </nav>
     </div>
@@ -97,8 +97,14 @@
             </p>
       </div>
       <div id="rsvpreg">
-      <a href="#rsvp"><div id="register">Register in Advanced</div></a>
+          <div id="step1">
+      <a onclick="nextStep()"><div id="register">Register in Advanced</div></a>
     </div>
+    <div id="step2">Hello World</div>
+    <div id="step3"></div>
+    <div id="step4"></div>
+    </div>
+
     </div>
     <script>
       function myFunction() {
@@ -109,6 +115,22 @@
             x.style.right = "0px";
         }
       }
+      function nextStep() {
+          var x = document.getElementById("step1");
+          if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+      }
+      {
+          var x = document.getElementById("step2");
+          if (x.style.display === "none") {
+          x.style.display = "none";
+        } else {
+            x.style.display = "block";
+      }
+    }
     </script>
   </body>
 </html>

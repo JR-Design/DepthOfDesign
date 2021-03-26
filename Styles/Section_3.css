@@ -47,3 +47,9 @@
   margin-top: 10vh;
   margin-left: 30vw;
 }
+/* Form */
+#step2 {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
