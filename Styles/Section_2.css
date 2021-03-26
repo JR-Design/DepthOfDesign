@@ -30,7 +30,7 @@
   text-align: center;
 }
 .grid-item img {
-  max-width: 69px;
+  max-width: 4vw;
 }
 #section_2_1 p {
   color: #fff;
@@ -39,6 +39,6 @@
 #class {
   position: absolute;
   right: 0;
-  transform: translateY(-25vh);
+  transform: translateY(-28vh);
   margin-right: 30vw;
 }
