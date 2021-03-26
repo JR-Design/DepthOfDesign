@@ -37,4 +37,8 @@
   margin-left: 10px;
 }
 #class {
+  position: absolute;
+  right: 0;
+  transform: translateY(-25vh);
+  margin-right: 30vw;
 }
