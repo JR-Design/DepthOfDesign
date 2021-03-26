@@ -49,7 +49,7 @@
 }
 /* Form */
 #step2 {
-  width: 100px;
-  height: 100px;
-  background-color: black;
+  border: 3px solid #485bfd;
+  border-radius: 20px;
+  display: none;
 }

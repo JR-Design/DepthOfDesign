@@ -115,22 +115,19 @@
             x.style.right = "0px";
         }
       }
-      function nextStep() {
-          var x = document.getElementById("step1");
-          if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-      }
-      {
-          var x = document.getElementById("step2");
-          if (x.style.display === "none") {
-          x.style.display = "none";
-        } else {
-            x.style.display = "block";
-      }
-    }
+    function nextStep() {
+            if (document.getElementById('step1')) {
+
+                if (document.getElementById('step1').style.display == 'none') {
+                    document.getElementById('step1').style.display = 'block';
+                    document.getElementById('step2').style.display = 'none';
+                }
+                else {
+                    document.getElementById('step1').style.display = 'none';
+                    document.getElementById('step2').style.display = 'block';
+                }
+            }
+}
     </script>
   </body>
 </html>
