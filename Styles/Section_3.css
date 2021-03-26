@@ -45,11 +45,17 @@
 }
 #rsvpreg {
   margin-top: 10vh;
-  margin-left: 30vw;
+  margin-left: 20vw;
 }
 /* Form */
 #step2 {
   border: 3px solid #485bfd;
   border-radius: 20px;
   display: none;
+}
+#step2 img {
+  background-color: #f6f6f6;
+  margin: 20px 20px;
+  padding: 20px;
+  border-radius: 20px;
 }
