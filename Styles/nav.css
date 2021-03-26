@@ -137,3 +137,59 @@ nav a:hover {
   border-radius: 2px;
   background: var(--primary);
 }
+
+#leftnav {
+  position: absolute;
+  height: 100vh;
+  width: 10vw;
+
+  z-index: 100;
+}
+
+#leftnav img {
+  margin-top: 73px;
+  margin-left: 2vw;
+  max-width: 60px;
+}
+
+#leftnav .line {
+  position: absolute;
+  left: 3.5vw;
+  top: 20vh;
+  width: 1px;
+  height: 60vh;
+  border-radius: 2px;
+  background: var(--primary);
+}
+
+#leftnav .line::before {
+  content: "01";
+  font-size: 17px;
+  font-family: gotham;
+  font-weight: regular;
+  position: relative;
+  top: -25px;
+  left: -9px;
+  color: var(--primary);
+}
+
+#leftnav .line::after {
+  content: "04";
+  font-size: 17px;
+  font-family: gotham;
+  font-weight: regular;
+  position: relative;
+  top: 61vh;
+  left: -27px;
+  color: var(--primary);
+}
+
+#leftnav .line2 {
+  position: absolute;
+  left: 3.45vw;
+  top: 20vh;
+  width: 3px;
+  height: 10vh;
+  border-radius: 2px;
+  background: var(--primary);
+}
