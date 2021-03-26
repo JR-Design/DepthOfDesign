@@ -6,4 +6,35 @@
 }
 #s2bg {
   position: absolute;
+  z-index: -1;
+}
+#about {
+  padding-top: 28%;
+  z-index: 1;
+  color: #fff;
+  padding-left: 10vw;
+  width: 30vw;
+}
+#about h1,
+#about p {
+  color: #fff;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  width: 10vw;
+}
+.grid-item {
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.grid-item img {
+  max-width: 69px;
+}
+#section_2_1 p {
+  color: #fff;
+  margin-left: 10px;
+}
+#class {
 }
