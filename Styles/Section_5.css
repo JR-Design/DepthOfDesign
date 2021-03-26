@@ -1,0 +1,12 @@
+.section5 {
+    height: 80vh;
+    margin: 0 auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.section5 img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
