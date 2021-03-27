@@ -142,19 +142,19 @@ nav a:hover {
   position: fixed;
   height: 100vh;
   width: 10vw;
-
+  left: 2vw;
   z-index: 100;
 }
 
 #leftnav img {
   margin-top: 73px;
-  margin-left: 2vw;
+  margin-left: 0.5vw;
   max-width: 60px;
 }
 
 #leftnav .line {
   position: absolute;
-  left: 3.5vw;
+  left: 1.5vw;
   top: 20vh;
   width: 1px;
   height: 60vh;
@@ -186,7 +186,7 @@ nav a:hover {
 
 #leftnav .line2 {
   position: absolute;
-  left: 3.45vw;
+  left: 1.45vw;
   top: 20vh;
   width: 3px;
   height: 10vh;
