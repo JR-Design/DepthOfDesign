@@ -1,11 +1,34 @@
-#s4 {
-    position: absolute;
-    z-index: -1;
-    float: right;
-    clear: both;
-    right: 0;
-  }
-
 .section4 {
-    height: 100vh;
+  height: 100vh;
+}
+#s4bg {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+}
+#s4bg img {
+  width: 90vw;
+  max-width: 2440px;
+  max-height: 78.7vh;
+}
+#event {
+  background-image: url(/Images/s4.svg);
+  background-repeat: no-repeat;
+  padding-top: 20vh;
+  padding-left: 1vw;
+  padding-bottom: 30vh;
+  text-align: center;
+}
+.eventgrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  width: 80vw;
+}
+
+.eventchild {
+  width: 20vw;
+  padding: 10px;
+}
+.eventchild p {
+  color: #fff;
 }

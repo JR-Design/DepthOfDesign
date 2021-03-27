@@ -21,6 +21,7 @@
 }
 #s2bg img {
   width: 90vw;
+  max-width: 2440px;
   max-height: 78.7vh;
 }
 #s2blur {
@@ -39,7 +40,7 @@
   padding-top: 20%;
   padding-left: 13.5%;
   padding-bottom: 20%;
-  padding-right: 20px;
+  padding-right: 10%;
   width: 30vw;
 }
 #about h1,
