@@ -180,7 +180,7 @@
         </div>
       </div>
 
-      <div class="fullheight">
+      
         <div class="section3" id="rsvp">
           <img class="section3_Bg" src="./Images/Background_2.svg" alt="" />
           <div class="section3_Body">
@@ -192,24 +192,86 @@
             </p>
             <p class="bodysmall">We will be hosting the event through Zoom</p>
           </div>
+
           <div id="rsvpreg">
+
             <div id="step1">
-              <a onclick="nextStep()"
-                ><div id="register">Register in Advanced</div></a
-              >
+              <a onclick="nextPage1()">
+                <div id="register">Register in Advanced</div>
+              </a>
             </div>
-            <div id="step2">
-              <img src="/Images/Professional.png" alt="" />
-              <h4>Professional</h4>
-              <img src="/Images/Student.png" alt="" />
-              <img src="/Images/Recruiter.png" alt="" />
+
+            <div class="form_area" id="step2">
+              <img class="Form_Rectangle" src="./Images/Form_Rectangle.svg" alt="">
+              
+              <div class="item1">
+                <section>
+                    <img src="./Images/Professional.png" alt="" />
+                    <p class="body">Professional</p>
+                </section>
+
+                <section>
+                    <img src="./Images/Student.png" alt="" />
+                    <p class="body">Student</p>
+                </section>
+
+                <section>
+                    <img src="./Images/Recruiter.png" alt="" />
+                    <p class="body">Guy</p>
+                </section>
+              </div>
+
+              <div class="item2">
+                <a class="btn_back" onclick="backPage1()">Back</a>
+                <a class="btn_fwd" onclick="nextPage2()">Next</a>
+              </div>
+
             </div>
-            <div id="step3"></div>
-            <div id="step4"></div>
+
+            <div class="form_area" id="step3">
+              <img class="Form_Rectangle" src="./Images/Form_Rectangle.svg" alt="">
+              <div class="item1">
+                <h1>NAME AND STUFF</h1>
+                <input type="text" name="" id="">
+                <br>
+                <input type="text" name="" id="">
+                <br>
+                <input type="text" name="" id="">
+              </div>
+              <div class="item2">
+                <a class="btn_back" onclick="backPage2()">Back</a>
+                <a class="btn_fwd" onclick="nextPage3()">Next</a>
+              </div>
+              
+            </div>
+
+
+            <div class="form_area" id="step4">
+              <div class="item1">
+                <img class="Form_Rectangle" src="./Images/Form_Rectangle.svg" alt="">
+                <h1>Confirm!</h1>
+              </div>
+
+              <div class="item2">
+                <a class="btn_back" onclick="backPage3()">Back</a>
+                <a class="btn_fwd" onclick="nextPage4()">Next</a>
+              </div>
+              
+            </div>
+
+            <div class="form_area" id="step5">
+              <div class="item1">
+              <img class="Form_Rectangle" src="./Images/Form_Rectangle_Full.png" alt="">
+              <h1 style="color: white;text-align: center;margin-top: 60px;">Thank you</h1>
+              </div>
+              <div class="item2">
+              </div>
+            </div>
+            
           </div>
         </div>
 
-        <div class="fullheight">
+        
           <div id="s4bg">
             <img src="./Images/Background.svg" alt="" />
             </div>
@@ -217,14 +279,17 @@
               <div class="eventgrid">
                 <div class="eventchild">
                   <img src="./Images/add.svg" alt="">
+                  <h3 style="color: white;">Site Launch</h3>
                   <p class="bodybig">5:45pm the Deapth of Design  website will be live with work from our graduating students. Visitors will have some time to veiw each students profile before the zoom meeting. </p>
                 </div>
                 <div class="eventchild">
                   <img src="./Images/add.svg" alt="">
+                  <h3 style="color: white;">Presentation</h3>
                   <p class="bodybig">6:00pm the zoom meeting will start and there wil be a presentation from students and faculty about their time in the program.</p>
                 </div>
                 <div class="eventchild">
                   <img src="./Images/add.svg" alt="">
+                  <h3 style="color: white;">Casual networking</h3>
                   <p class="bodybig">~7:00pm breakout rooms will be created to allow people to virtually walk around to each student and speak to them personally about their work.</p>
                 </div>
               </div>
@@ -268,5 +333,6 @@
         }
       }
     </script>
+    <script src="./Scripts/main.js"></script>
   </body>
 </html>

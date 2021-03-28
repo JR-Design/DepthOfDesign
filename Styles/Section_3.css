@@ -1,7 +1,6 @@
 .section3 {
   width: 100vw;
   height: 100vh;
-  padding-top: 10vh;
   display: flex;
 }
 
@@ -53,19 +52,75 @@
   text-decoration: none;
 }
 #rsvpreg {
-  margin-top: 50vh;
-  margin-left: 20vw;
+  margin-top: 40vh;
+  margin-left: 15vw;
 }
 /* Form */
-#step2 {
-  border: 3px solid #485bfd;
-  border-radius: 20px;
-  display: none;
-  color: #485bfd;
+
+
+.form_area {
+  display: grid;
+  grid-template-areas:
+  'item1 item1'
+  'item2 item2';
+  width: 500px;
 }
-#step2 img {
-  background-color: #f6f6f6;
-  margin: 20px 20px;
-  padding: 20px;
-  border-radius: 20px;
+
+
+
+.item1 { grid-area: item1; }
+.item2 { grid-area: item2; }
+.item2 {
+  display: block;
+  text-align: center;
+  margin-top: 24px;
+}
+.item1 section {
+  display: inline-block;
+  padding: 40px;
+  margin: 6px;
+  border-radius: 8px;
+  background-color: white;
+  text-align: center;
+}
+
+.item1 section img {
+  width: 60px;
+}
+
+
+
+.btn_back {
+  cursor: pointer;
+  width: 40%;
+  padding: 6px 12px;
+  background: var(--light_grey);
+  font-family: gotham;
+  font-size: 16px;
+}
+
+.btn_fwd {
+  cursor: pointer;
+  width: 40%;
+  padding: 6px 12px;
+  font-size: 16px;
+  color: white;
+  font-family: gotham;
+  font-weight: bold;
+  background: var(--primary);
+}
+
+.Form_Rectangle {
+  position: absolute;
+  right: 0px;
+  margin-top: -140px;
+  margin-right: 8vw;
+  z-index: -10;
+}
+.Form_Rectangle_2 {
+  position: relative;
+  right: 10px;
+  margin-top: -210px;
+  margin-right: 8vw;
+  z-index: -10;
 }
