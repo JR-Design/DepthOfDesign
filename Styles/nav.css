@@ -187,7 +187,8 @@ nav a:hover {
 #leftnav .line2 {
   position: absolute;
   left: 1.45vw;
-  top: 20vh;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
   width: 3px;
   height: 10vh;
   border-radius: 2px;

@@ -69,12 +69,18 @@
 
 
 
-.item1 { grid-area: item1; }
+.item1 { grid-area: item1; text-align: center; }
 .item2 { grid-area: item2; }
 .item2 {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  /* justify-content: center; */
+  width: 280px;
   text-align: center;
-  margin-top: 24px;
+  margin: 0 auto;
+  margin-top: 14px;
 }
 .item1 section {
   display: inline-block;
@@ -107,7 +113,6 @@
   font-size: 16px;
   color: white;
   font-family: gotham;
-  font-weight: bold;
   background: var(--primary);
 }
 
@@ -124,4 +129,432 @@
   margin-top: -210px;
   margin-right: 8vw;
   z-index: -10;
+}
+
+/* form starting stylings ------------------------------- */
+.form_input_element 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+  margin-left: 20%;
+}
+.form_input_element input 				{
+  font-size:18px;
+  font-family: gotham;
+  padding:10px 0px 10px 0px;
+  display:block;
+  background: transparent;
+  width:300px;
+  border:none;
+  border-bottom:0.5px solid #919bf0;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+.form_input_element label 				 {
+  color:var(--secondary); 
+  font-family: gotham;
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color: var(--primary);
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:var(--primary); 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:300px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.4s ease-in-out;
+  -moz-animation:inputHighlighter 0.4s ease-in-out;
+  animation:inputHighlighter 0.4s ease-out;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:var(--primary); }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:var(--primary); }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:var(--primary); }
+  to 	{ width:0; background:transparent; }
+}
+
+
+/* CHECKBOX ============= */
+
+
+input[type=checkbox],
+input[type=radio] {
+    --active: #275EFE;
+    --active-inner: #fff;
+    --focus: 2px rgba(39, 94, 254, .3);
+    --border: #BBC1E1;
+    --border-hover: #275EFE;
+    --background: #fff;
+    --disabled: #F6F8FF;
+    --disabled-inner: #E1E6F9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 21px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+  }
+  input[type=checkbox]:after,
+input[type=radio]:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+  }
+  input[type=checkbox]:checked,
+input[type=radio]:checked {
+    --b: var(--active);
+    --bc: var(--active);
+    --d-o: .3s;
+    --d-t: .6s;
+    --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+  }
+  input[type=checkbox]:disabled,
+input[type=radio]:disabled {
+    --b: var(--disabled);
+    cursor: not-allowed;
+    opacity: 0.9;
+  }
+  input[type=checkbox]:disabled:checked,
+input[type=radio]:disabled:checked {
+    --b: var(--disabled-inner);
+    --bc: var(--border);
+  }
+  input[type=checkbox]:disabled + label,
+input[type=radio]:disabled + label {
+    cursor: not-allowed;
+  }
+  input[type=checkbox]:hover:not(:checked):not(:disabled),
+input[type=radio]:hover:not(:checked):not(:disabled) {
+    --bc: var(--border-hover);
+  }
+  input[type=checkbox]:focus,
+input[type=radio]:focus {
+    box-shadow: 0 0 0 var(--focus);
+  }
+  input[type=checkbox]:not(.switch),
+input[type=radio]:not(.switch) {
+    width: 21px;
+  }
+  input[type=checkbox]:not(.switch):after,
+input[type=radio]:not(.switch):after {
+    opacity: var(--o, 0);
+  }
+  input[type=checkbox]:not(.switch):checked,
+input[type=radio]:not(.switch):checked {
+    --o: 1;
+  }
+  input[type=checkbox] + label,
+input[type=radio] + label {
+    font-size: 14px;
+    font-family: gotham;
+    line-height: 21px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    margin-left: 4px;
+  }
+
+  input[type=checkbox]:not(.switch) {
+    border-radius: 7px;
+  }
+  input[type=checkbox]:not(.switch):after {
+    width: 5px;
+    height: 9px;
+    border: 2px solid var(--active-inner);
+    border-top: 0;
+    border-left: 0;
+    left: 7px;
+    top: 4px;
+    transform: rotate(var(--r, 20deg));
+  }
+  input[type=checkbox]:not(.switch):checked {
+    --r: 43deg;
+  }
+  input[type=checkbox].switch {
+    width: 38px;
+    border-radius: 11px;
+  }
+  input[type=checkbox].switch:after {
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: var(--ab, var(--border));
+    transform: translateX(var(--x, 0));
+  }
+  input[type=checkbox].switch:checked {
+    --ab: var(--active-inner);
+    --x: 17px;
+  }
+  input[type=checkbox].switch:disabled:not(:checked):after {
+    opacity: 0.6;
+  }
+
+}
+
+
+
+
+/*SUBMIT BUTTON*/
+.button {
+  --background: #1E2235;
+  --color: #F6F8FF;
+  --shadow: rgba(0, 9, 61, 0.24);
+  --cannon-dark: #A6ACCD;
+  --cannon-light: #F6F8FF;
+  --cannon-shadow: rgba(13, 15, 24, 0.9);
+  --confetti-1: #892AB8;
+  --confetti-2: #EA4C89;
+  --confetti-3: #FFFF04;
+  --confetti-4: #4AF2FD;
+  --z-before: -6;
+  display: block;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  border: 0;
+  background: none;
+  padding: 9px 22px 9px 16px;
+  line-height: 26px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color);
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform var(--transform-duration, 0.4s);
+  will-change: transform;
+  transform-style: preserve-3d;
+  transform: perspective(440px) rotateX(calc(var(--rx, 0) * 1deg)) rotateY(calc(var(--ry, 0) * 1deg)) translateZ(0);
+}
+.button:hover {
+  --transform-duration: .16s;
+}
+.button.success {
+  --confetti-scale: 0;
+  --stroke-dashoffset: 15;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px;
+  transform: translateZ(calc(var(--z-before) * 1px));
+  background: var(--background);
+  box-shadow: 0 4px 8px var(--shadow);
+}
+.button .icon,
+.button span {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  font-family: gotham;
+  color: var(--primary);
+  z-index: 1;
+}
+.button .icon {
+  --z: 2px;
+  width: 24px;
+  height: 14px;
+  margin: 8px 16px 0 0;
+  transform: translate(calc(var(--icon-x, 0) * 1px), calc(var(--icon-y, 0) * 1px)) translateZ(2px);
+}
+.button .icon .confetti {
+  position: absolute;
+  left: 17px;
+  bottom: 9px;
+}
+.button .icon .confetti svg {
+  width: 18px;
+  height: 16px;
+  display: block;
+  stroke-width: 1px;
+  fill: none;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.button .icon .confetti svg * {
+  transition: stroke-dashoffset 0.2s;
+  stroke-dasharray: 15 20;
+  stroke-dashoffset: var(--stroke-dashoffset, 0);
+  stroke: var(--stroke-all, var(--stroke, var(--confetti-2)));
+}
+.button .icon .confetti svg *:nth-child(2) {
+  --stroke: var(--confetti-3);
+}
+.button .icon .confetti svg *:nth-child(3) {
+  --stroke: var(--confetti-1);
+}
+.button .icon .confetti .emitter {
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  pointer-events: none;
+}
+.button .icon .confetti .emitter div {
+  width: 4px;
+  height: 4px;
+  margin: -2px 0 0 -2px;
+  border-radius: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-style: preserve-3d;
+  background: var(--confetti-all, var(--b, none));
+}
+.button .icon .confetti i {
+  width: 4px;
+  height: 4px;
+  display: block;
+  transform: scale(var(--confetti-scale, 0.5));
+  position: absolute;
+  transition: transform 0.25s;
+  left: var(--left, -1px);
+  top: var(--top, 3px);
+  border-radius: var(--border-radius, 1px);
+  background: var(--confetti-background, var(--confetti-3));
+}
+.button .icon .confetti i:nth-child(2) {
+  --left: 9px;
+  --top: -1px;
+  --border-radius: 2px;
+  --confetti-background: var(--confetti-4);
+}
+.button .icon .confetti i:nth-child(3) {
+  --left: 5px;
+  --top: 3px;
+  --confetti-background: var(--confetti-1);
+}
+.button .icon .confetti i:nth-child(4) {
+  --left: 10px;
+  --top: 14px;
+  --confetti-background: var(--confetti-2);
+}
+.button .icon .confetti i:nth-child(5) {
+  --left: 9px;
+  --top: 7px;
+  --confetti-background: var(--confetti-4);
+}
+.button .icon .confetti i:nth-child(6) {
+  --left: 6px;
+  --top: 8px;
+  --border-radius: 2px;
+  --confetti-background: var(--confetti-2);
+}
+.button .icon .cannon {
+  position: relative;
+  width: 24px;
+  height: 14px;
+  transform: translate(0, 3px) rotate(-45deg);
+  filter: drop-shadow(-2px 2px 2px var(--cannon-shadow));
+}
+.button .icon .cannon:before, .button .icon .cannon:after {
+  content: "";
+  display: block;
+  height: 14px;
+}
+.button .icon .cannon:before {
+  background: linear-gradient(var(--cannon-dark), var(--cannon-light) 50%, var(--cannon-dark));
+  width: 100%;
+  -webkit-clip-path: polygon(25px -1px, 0 52%, 25px 15px);
+  clip-path: polygon(25px -1px, 0 52%, 25px 15px);
+}
+.button .icon .cannon:after {
+  width: 6px;
+  position: absolute;
+  right: -3px;
+  top: 0;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 0.5px var(--cannon-light);
+  background: linear-gradient(90deg, var(--cannon-dark), var(--cannon-light));
+}
+.button.white {
+  --background: #fff;
+  --color: #1E2235;
+  --border: #E1E6F9;
+  --shadow: none;
+  --cannon-dark: #103FC5;
+  --cannon-light: #275EFE;
+  --cannon-shadow: rgba(0, 9, 61, 0.2);
+}
+.button.white:before {
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+
+
+body .button {
+  background: white;
+  border: 1px solid var(--primary);
+  margin: 0 12px;
+  padding: 10px;
+  outline: none;
+
 }
