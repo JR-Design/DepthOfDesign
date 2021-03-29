@@ -60,12 +60,13 @@ nav a:hover {
 }
 
 .navbar-toggle {
-  margin-top: 73px;
+  margin-top: 5vh;
   height: 50px;
   position: fixed;
   z-index: 90;
   right: 50px;
   width: 50px;
+  cursor: pointer;
 }
 #closeicon {
   padding: 10px;
@@ -99,12 +100,13 @@ nav a:hover {
 }
 
 .navbar-toggle-close {
-  top: 63px;
+  top: 3vh;
   height: 50px;
-  position: relative;
+  position: absolute;
   right: 50px;
   width: 50px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .navbar-toggle-close .icon {
@@ -115,14 +117,15 @@ nav a:hover {
   width: 30px;
   box-shadow: 0 3px 0 0 white;
   transform: rotate(45deg);
-  margin-bottom: -10px;
-  margin-right: -3px;
+  margin-top: 24px;
+  margin-right: 7px;
 }
 .navbar-toggle-close .line:nth-child(2) {
   width: 30px;
   box-shadow: 0 3px 0 0 white;
   transform: rotate(-45deg);
-  margin-bottom: 6px;
+  margin-top: -3px;
+  margin-right: 11px;
 }
 .navbar-toggle-close .line:nth-child(3) {
   box-shadow: 0 3px 0 0 white;
@@ -147,8 +150,8 @@ nav a:hover {
 }
 
 #leftnav img {
-  margin-top: 73px;
-  margin-left: 0.5vw;
+  margin-top: 5vh;
+  margin-left: -0.1vw;
   max-width: 60px;
 }
 
