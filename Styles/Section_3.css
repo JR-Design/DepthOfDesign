@@ -50,38 +50,54 @@
   background-color: blue;
   height: 50vh;
   margin: 0 auto;
-  width: 120vh;
+  width: 82vw;
+  /* margin-left: 80px; */
   padding-top: 0%;
+  display: grid;
+  /* grid-gap: 10px; */
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px;
 }
 
 #test3::before {
-  -webkit-transform: skewY(2.5deg);
-  transform: skewY(2.5deg);
+  -webkit-transform: skewY(-2.5deg);
+  transform: skewY(-2.5deg);
   background: inherit;
   display: block;
   height: 60%;
   /* background-color: black; */
-  z-index: -2;
+  z-index: 0;
   content: '';
   border-radius: 25px;
-  width: 100%;
-  transform-origin: 200vh 0;
+  width: 82vw;
+  transform-origin: -100vh 0;
 }
 
 #test3::after {
   background: inherit;
-  -webkit-transform: skewY(-2.5deg);
-  transform-origin: -30vh;
-  transform: skewY(-2.5deg);
+  -webkit-transform: skewY(2.5deg);
+  transform-origin: 60vh;
+  transform: skewY(2.5deg);
   display: block;
   height: 60%;
-  z-index: -1;
+  z-index: 1;
   border-radius: 25px;
   /* background-color: black; */
   content: '';
-  width: 100%;
+  width: 82vw;
   padding-bottom: 0vh;
+  position: absolute;
 }
+
+#test3 div {
+  background: rgba(0, 128, 0, 0.336);
+  height: 30vh;
+  z-index: 5;
+  width: 100%;
+  /* width: 40%; */
+  /* justify-self: center; */
+}
+
 
 
 .section3_bg {
