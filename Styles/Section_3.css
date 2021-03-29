@@ -360,6 +360,8 @@ input[type=radio] {
     -webkit-appearance: none;
     -moz-appearance: none;
     height: 21px;
+    /* top: -80px; */
+    width: 50px;
     outline: none;
     display: inline-block;
     vertical-align: top;
