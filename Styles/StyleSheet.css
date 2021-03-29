@@ -18,8 +18,8 @@
 }
 .Background_blur {
     backdrop-filter: blur(27px);
-    background-color: rgba(255, 255, 255, 0.08); 
-    width: 50vw;
+    background-color: rgba(255, 255, 255, 0.08);
+    width: 40vw;
     top: 52.5%;
     height: 200px;
 }

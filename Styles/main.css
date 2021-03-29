@@ -9,7 +9,7 @@
 @import "StyleSheet.css";
 @import "Footer.css";
 .fullheight {
-  height: 100vh;
+  min-height: 100vh;
   /* margin: 0 auto; */
   /* position: relative; */
   /* width: 100vw; */
