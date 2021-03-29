@@ -1,6 +1,6 @@
 @import "Textstyles.css";
 @import "Color.css";
-@import "Nav.css";
+@import "nav.css";
 @import "Section_1.css";
 @import "Section_2.css";
 @import "Section_3.css";
@@ -10,11 +10,17 @@
 @import "Footer.css";
 .fullheight {
   height: 100vh;
+  /* margin: 0 auto; */
+  /* position: relative; */
+  /* width: 100vw; */
+  /* left: 0; */
+  /* max-width: 1440px; */
 }
 * {
   scroll-behavior: smooth;
 }
 #wrapper {
   max-width: 1440px;
+  width: 100vw;
   margin: 0 auto;
 }
