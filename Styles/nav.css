@@ -2,12 +2,15 @@
   width: 43%;
   max-width: 1000px;
   height: 100vh;
-  background-color: var(--primary);
+  background-color: #495BFC90;
   position: fixed;
   top: 0;
   right: -1000px;
+  backdrop-filter: blur(27px);
+  filter: drop-shadow(-30px 16px 14px #44444440);
   overflow-x: hidden;
   z-index: 100;
+  /* backdrop-filter: drop-shadow(0px 0px 0px black); */
   transition: 0.4s;
   transition-timing-function: ease-in-out;
 }
@@ -145,7 +148,7 @@ nav a:hover {
   position: fixed;
   height: 100vh;
   width: 10vw;
-  left: 2vw;
+  left: 1vw;
   z-index: 100;
 }
 
@@ -158,7 +161,7 @@ nav a:hover {
 #leftnav .line {
   position: absolute;
   left: 1.5vw;
-  top: 20vh;
+  top: 30vh;
   width: 1px;
   height: 60vh;
   border-radius: 2px;
@@ -190,7 +193,7 @@ nav a:hover {
 #leftnav .line2 {
   position: absolute;
   left: 1.45vw;
-  margin-top: 20vh;
+  margin-top: 30vh;
   margin-bottom: 20vh;
   width: 3px;
   height: 10vh;
