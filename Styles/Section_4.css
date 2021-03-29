@@ -15,23 +15,30 @@
   background-image: url(/Images/s4.svg);
   background-repeat: no-repeat;
   width: 70vw;
-  max-height: 20vh;
   background-size: auto;
   margin: 0 auto;
-  padding-top: 20vh;
+  padding-top: 10vh;
   padding-left: 1vw;
-  padding-bottom: 30vh;
+  padding-bottom: 10vh;
   text-align: center;
 }
 .eventgrid {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto;
   width: 60vw;
 }
 
 .eventchild {
-  padding: 10px;
+  padding: 20px;
+  width: fit-content;
+  margin: 0 auto;
 }
+.eventchild h3,
 .eventchild p {
   color: #fff;
+}
+.eventchild h3,
+.eventchild p,
+.eventchild img {
+  margin-top: 15px;
 }
