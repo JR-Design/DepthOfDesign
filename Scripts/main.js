@@ -59,7 +59,6 @@ function pageDepth() {
     let ViewportHeight = window.innerHeight;
     let DocumentHeight = document.body.clientHeight;
     let progressbarUpdate = (ScrollTop / (DocumentHeight - ViewportHeight)) * 50 + "%";
-    console.log(progressbarUpdate);
     let x = document.getElementById("progressbar");  
     x.style.top = progressbarUpdate;
 
