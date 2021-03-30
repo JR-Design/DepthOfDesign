@@ -5,7 +5,7 @@
   /* position: absolute; */
   /* z-index: -1; */
   /* width: 90vw; */
-  margin: 0 auto;
+  padding-top: 25%;
 }
 #s4bg img {
   max-width: 1440px;
@@ -50,6 +50,8 @@
 }
 #s4overlay {
   position: absolute;
-  margin-top: -220px;
-  transform: scale(0.7);
+  max-width: 1340px !important;
+  margin-top: -8%;
+  width: 65vw;
+  margin-left: 1%;
 }
