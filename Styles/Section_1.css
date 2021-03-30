@@ -36,6 +36,7 @@
   padding: 15px 50px;
   box-sizing: border-box;
   width: fit-content;
+  min-width: 300px;
   border-radius: 2px;
   background-color: #fff;
   font-family: Gotham;
@@ -56,6 +57,7 @@
 }
 .section1_Body a {
   text-decoration: none;
+  /* min-width: 699px; */
 }
 .section1_Logo {
   display: flex;
