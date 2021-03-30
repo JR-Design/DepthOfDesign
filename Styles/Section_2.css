@@ -38,7 +38,7 @@
   text-align: left;
 }
 #class {
-  background-image: url(/Images/S2.svg);
+  background-image: url(./Images/S2.svg);
   background-repeat: no-repeat;
   padding-left: 13.5%;
   padding-top: 10%;
@@ -57,7 +57,7 @@
   width: 10vw;
 }
 .grid-item {
-  padding: 10px;
+  padding: 8px;
   font-size: 30px;
   text-align: center;
 }
