@@ -4,11 +4,11 @@
 #s4bg {
   position: absolute;
   z-index: -1;
-  right: 0;
+  width: 90vw;
+  margin: 0 auto;
 }
 #s4bg img {
-  width: 90vw;
-  max-width: 2440px;
+  max-width: 1440px;
   max-height: 78.7vh;
 }
 #event {
