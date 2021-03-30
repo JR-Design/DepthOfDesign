@@ -16,3 +16,7 @@ footer img {
   max-height: 10vh;
   filter: invert(100%);
 }
+
+footer a:nth-child(2) img{
+  filter: invert(0);
+}
