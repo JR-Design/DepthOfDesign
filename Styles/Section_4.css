@@ -14,7 +14,7 @@
   z-index: 0;
 }
 #event {
-  background-image: url(/Images/s.svg);
+  background-image: url(/Images/Background.svg);
   background-repeat: no-repeat;
   max-width: 70vw;
   /* background-size: auto; */
@@ -24,18 +24,20 @@
   /* padding-left: 1vw; */
   /* z-index: 10; */
   padding-bottom: 10vh;
-  text-align: center;
 }
 .eventgrid {
   display: grid;
   grid-template-columns: auto auto auto;
-  width: 60vw;
+  margin: 0 auto;
+  width: 40vw;
 }
 
 .eventchild {
   padding: 20px;
-  width: fit-content;
-  margin: 0 auto;
+  min-width: 235px;
+  width: 10vw;
+  text-align: center;
+  z-index: 1;
 }
 .eventchild h3,
 .eventchild p {
@@ -45,4 +47,9 @@
 .eventchild p,
 .eventchild img {
   margin-top: 15px;
+}
+#s4overlay {
+  position: absolute;
+  margin-top: -220px;
+  transform: scale(0.7);
 }
