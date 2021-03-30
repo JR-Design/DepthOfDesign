@@ -2,6 +2,7 @@
   padding-top: 20vh;
   min-height: 30vh;
   margin: 0 auto;
+  max-width: 1440px;
   justify-content: center;
   /* height: 200%; */
   background-color: var(--light_grey);
@@ -9,7 +10,13 @@
   grid-template-columns: repeat(auto-fill, 720px);
 }
 
-#rsvp::before {
+#section3_rsvp {
+  background-color: var(--light_grey);
+  width: 100vw;
+  margin: 0 auto;
+}
+
+#section3_rsvp::before {
   -webkit-transform: skewY(2.5deg);
   transform: skewY(2.5deg);
   background: inherit;
@@ -19,20 +26,20 @@
   /* background-color: black; */
   z-index: -2;
   content: '';
-  border-radius: 12px;
+  /* border-radius: 12px; */
   width: 100%;
-  transform-origin: 710vh 0;
+  margin: 0 auto;
+  transform-origin: 500vh 0;
 }
-#rsvp::after {
+#section3_rsvp::after {
   background: inherit;
   -webkit-transform: skewY(-2.5deg);
   transform-origin: 0vh;
   transform: skewY(-2.5deg);
   display: block;
-  height: 70%;
+  height: 20%;
   z-index: -1;
   position: absolute;
-  /* background-color: black; */
   content: '';
   width: 100%;
   padding-bottom: 0vh;
