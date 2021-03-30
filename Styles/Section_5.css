@@ -1,9 +1,8 @@
 .section5 {
-  height: 80vh;
+  height: 40vh;
   margin: 0 auto;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
   text-align: center;
+  padding-top: 25vh;
 }
 
 .section5 img {
@@ -11,65 +10,50 @@
   width: 50%;
   margin: 0 auto;
 }
-
-/* .section5 .chart {
-  position: relative;
-  display: inline-block;
-  width: 110px;
-  height: 110px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+.container {
+  color: #333;
+  margin: 0 auto;
   text-align: center;
 }
-.section5 .chart canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
+.container h1 {
+  text-transform: uppercase;
+  color: var(--primary);
 }
-.section5 .percent {
+li {
   display: inline-block;
-  line-height: 110px;
-  z-index: 2;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+  color: var(--primary);
 }
-.section5 .percent:after {
-  content: "%";
-  margin-left: 0.1em;
-  font-size: 0.8em;
-}
-.section5 input {
+
+li span {
   display: block;
-  margin: auto;
-  margin-bottom: 3em;
+  font-size: 4.5rem;
 }
-.section5 .span2 {
-  float: left;
-  width: 50%;
+
+.message {
+  font-size: 4rem;
+  display: none;
+  padding: 1rem;
 }
-@media only screen and (max-width: 600px) {
-  .section5 li {
-    font-size: 14.4px;
+
+.emoji {
+  padding: 0 0.25rem;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  li {
+    font-size: 1.125rem;
+    padding: 0.75rem;
+  }
+
+  li span {
+    font-size: 3.375rem;
   }
 }
-@media only screen and (max-width: 430px) {
-  .section5 .span2 {
-    float: none;
-    width: 100%;
-  }
-  .section5 body {
-    padding-top: 0;
-  }
-  .section5 ul {
-    height: auto;
-    position: static;
-  }
-  .section5 li {
-    display: block;
-    width: 100%;
-  }
-  .section5 li a {
-    white-space: normal;
-  }
-  .section5 a.active:after {
-    display: none;
-  }
-} */

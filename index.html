@@ -379,14 +379,22 @@
       </div>
 
       <div class="section5">
-        <!-- <span class="chart" data-percent="86">
-          <span class="percent">86</span>
-          <canvas height="400" width="400"></canvas>
-        </span>
-        <span class="chart" data-percent="86">
-          <span class="percent">86</span>
-          <canvas height="400" width="400"></canvas>
-        </span> -->
+        <div class="container">
+          <h1 id="headline">Countdown to site Launch:</h1>
+          <div id="countdown">
+            <ul>
+              <li><span id="days"></span>days</li>
+              <li><span id="hours"></span>Hours</li>
+              <li><span id="minutes"></span>Minutes</li>
+              <li><span id="seconds"></span>Seconds</li>
+            </ul>
+          </div>
+          <div class="message">
+            <div id="content">
+              <h1>Hello Word</h1>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <footer>
@@ -422,34 +430,41 @@
         }
       }
     </script>
-
-    <!-- <script src="./Scripts/easypiechart.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var chart = (window.chart = new EasyPieChart(
-          document.querySelector("div.section5 > span"),
-          {
-            easing: "easeOutElastic",
-            delay: 3000,
-            barColor: "#69c",
-            trackColor: "#ace",
-            scaleColor: false,
-            lineWidth: 20,
-            trackWidth: 16,
-            lineCap: "butt",
-            onStep: function (from, to, percent) {
-              this.el.children[0].innerHTML = Math.round(percent);
-            },
-          }
-        ));
+(function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
 
-        document
-          .querySelector(".js_update")
-          .addEventListener("click", function (e) {
-            chart.update(Math.random() * 200 - 100);
-          });
-      });
-    </script> -->
+  let birthday = "April 20, 2021 17:45:00",
+      countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        let now = new Date().getTime(),
+            distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          let headline = document.getElementById("headline"),
+              countdown = document.getElementById("countdown"),
+              content = document.getElementById("content");
+
+          headline.innerText = "Our Site Is Live!";
+          countdown.style.display = "none";
+          content.style.display = "block";
+
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="./Scripts/Physics2DPlugin.min.js"></script>
     <script src="./Scripts/main.js"></script>
