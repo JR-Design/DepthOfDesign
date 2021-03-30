@@ -14,5 +14,5 @@ footer img {
   filter: saturate(100%);
   transform: translate(-50%, -50%);
   max-height: 10vh;
-  filter: invert(75%);
+  filter: invert(100%);
 }
