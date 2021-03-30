@@ -19,6 +19,7 @@
   position: absolute;
   z-index: -1;
   width: 90vw;
+  max-width: 1440px;
   margin: 0 auto;
 }
 #s2bg img {
@@ -60,7 +61,7 @@
   text-align: center;
 }
 .grid-item img {
-  max-width: 4vw;
+  max-width: 70px;
   max-height: 5vh;
 }
 #section_2_1 p {
