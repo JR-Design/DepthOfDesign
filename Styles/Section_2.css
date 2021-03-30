@@ -39,9 +39,9 @@
 #class {
   background-image: url(/Images/S2.svg);
   background-repeat: no-repeat;
-  padding-top: 20%;
   padding-left: 13.5%;
-  padding-bottom: 20%;
+  padding-top: 10%;
+  padding-bottom: 10%;
   padding-right: 10%;
   width: 35vw;
   max-width: 550px;
