@@ -159,7 +159,7 @@
   letter-spacing: 0.184615px;
   color: #000000;
   /* margin-left: 120px; */
-  transition: ease-in 0.3s;
+  /* transition: ease-in 0.3s; */
 }
 .section3 a:hover #register {
   background-color: #485bfd;
