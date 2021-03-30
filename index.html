@@ -19,7 +19,6 @@
         <span class="line"></span>
         <span id="progressbar" class="line2"></span>
       </div>
-
       <div id="sidenav">
         <nav>
           <div id="closeicon">
@@ -52,7 +51,6 @@
           </div>
         </nav>
       </div>
-
       <a onclick="myFunction()" class="navbar-toggle">
         <i class="icon">
           <span class="line"></span>
@@ -94,7 +92,6 @@
         <div id="section_2">
           <div id="section_2_1">
             <div id="s2bg"><img src="./Images/Background.svg" alt="" /></div>
-
             <div class="s2item1">
               <div id="about">
                 <h1>The Exhibition</h1>
@@ -175,23 +172,8 @@
           </div>
         </div>
       </div>
-      <!-- 
-        <div id="test2">
-          <div id="test3">
-            <div>
-
-            </div>
-
-            <div>
-
-            </div>
-
-          </div>
-        </div>
-      -->
       <div id="section3_rsvp">
         <class class="section3" id="rsvp"> 
-        
           <div class="section3_Body">
             <h1>R.S.V.P</h1>
             <p class="bodybig">
@@ -200,7 +182,6 @@
             </p>
             <p class="bodysmall">We will be hosting the event through Zoom</p>
           </div>
-
           <div id="rsvpreg">
             <div class="form_area" id="step1">
               <a onclick="nextPage1()">
@@ -214,37 +195,29 @@
                 src="./Images/Form_Rectangle.svg"
                 alt=""
               />
-
               <div class="item1">
                 <img style="width: 100%" src="./Images/Step1.png" alt="" />
-
-                <section>
-                  
+                <section>                  
                   <img src="./Images/Professional.png" alt="" />
                   <p class="body">Professional</p>
                   <input id="radio-1" type="radio" name="radio-01" value="professional">
                 </section>
-
-
                 <section>
                   <img src="./Images/Student.png" alt="" />
                   <p class="body">Student</p>
                   <input id="radio-2" type="radio" name="radio-01" value="student" />
                 </section>
-
                 <section>
                   <img src="./Images/Recruiter.png" alt="" />
                   <p class="body">Recruiter</p>
                   <input id="radio-3" type="radio" name="radio-01" value="recruiter" />
                 </section>
               </div>
-
               <div class="item2">
                 <a class="btn_back" onclick="backPage1()">Back</a>
                 <a class="btn_fwd" onclick="nextPage2()">Next</a>
               </div>
             </div>
-
             <div class="form_area" id="step3">
               <img
                 class="Form_Rectangle"
@@ -257,7 +230,6 @@
                   src="./Images/Step2.png"
                   alt=""
                 />
-
                 <div class="form_input_element">
                   <input type="text" name="Name" id="Name" required />
                   <span class="highlight"></span>
@@ -276,7 +248,6 @@
                 <a class="btn_fwd" onclick="nextPage3()">Next</a>
               </div>
             </div>
-
             <div class="form_area" id="step4">
                 <img
                 class="Form_Rectangle"
@@ -291,10 +262,8 @@
                   <label for="c1">Subscribe to our newsletter!</label>
                 </div>
               </div>
-
               <div class="item2">
                 <a class="btn_back" onclick="backPage3()">Back</a>
-
                 <div>
                   <button onclick="nextPage4()" class="button white">
                     <div class="icon">
@@ -318,7 +287,6 @@
                 </div>
               </div>
             </div>
-
             <div class="form_area" id="step5">
               <img
                 class="Form_Rectangle"
@@ -336,16 +304,13 @@
           </div>
         </class>
       </div>
-
-      <div class="section4">
-          <div class="wrapper">
-            <div id="s4bg">
-              
-            
+      <div class="wrapper">
+      <div class="section4">          
+            <div id="s4bg">           
             <div id="event">
               <img id="s4overlay" src="./Images/s4.svg" alt="" />
               <div class="eventgrid">
-                <div class="eventchild">
+                <div id="child1" class="eventchild">
                   <img src="./Images/Icon_1.svg" alt="" />
                   <h3 style="color: white">Site Launch</h3>
                   <p class="bodybig">
@@ -354,7 +319,7 @@
                     each students profile before the zoom meeting.
                   </p>
                 </div>
-                <div class="eventchild">
+                <div id="child2" class="eventchild">
                   <img src="./Images/Icon_2.svg" alt="" />
                   <h3>Presentation</h3>
                   <p class="bodybig">
@@ -363,7 +328,7 @@
                     program.
                   </p>
                 </div>
-                <div class="eventchild">
+                <div id="child3" class="eventchild">
                   <img src="./Images/Icon_3.svg" alt="" />
                   <h3>Casual networking</h3>
                   <p class="bodybig">
@@ -377,7 +342,6 @@
           </div>
       </div>
       </div>
-
       <div class="section5">
         <div class="container">
           <h1 id="headline">Countdown to site Launch:</h1>
@@ -408,63 +372,8 @@
         ><img src="./Images/CCGD.png" alt=""
       /></a>
     </footer>
-
-    <script>
-      function myFunction() {
-        var x = document.getElementById("sidenav");
-        if (x.style.right === "0px") {
-          x.style.right = "-3000px";
-        } else {
-          x.style.right = "0px";
-        }
-      }
-      function nextStep() {
-        if (document.getElementById("step1")) {
-          if (document.getElementById("step1").style.display == "none") {
-            document.getElementById("step1").style.display = "block";
-            document.getElementById("step2").style.display = "none";
-          } else {
-            document.getElementById("step1").style.display = "none";
-            document.getElementById("step2").style.display = "block";
-          }
-        }
-      }
-    </script>
-    <script>
-(function () {
-  const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
-
-  let birthday = "April 20, 2021 17:45:00",
-      countDown = new Date(birthday).getTime(),
-      x = setInterval(function() {    
-
-        let now = new Date().getTime(),
-            distance = countDown - now;
-
-        document.getElementById("days").innerText = Math.floor(distance / (day)),
-          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-
-        //do something later when date is reached
-        if (distance < 0) {
-          let headline = document.getElementById("headline"),
-              countdown = document.getElementById("countdown"),
-              content = document.getElementById("content");
-
-          headline.innerText = "Our Site Is Live!";
-          countdown.style.display = "none";
-          content.style.display = "block";
-
-          clearInterval(x);
-        }
-        //seconds
-      }, 0)
-  }());
-</script>
+<script src="./Scripts/sidenav.js"></script>
+    <script src="./Scripts/countdown.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="./Scripts/Physics2DPlugin.min.js"></script>
     <script src="./Scripts/main.js"></script>

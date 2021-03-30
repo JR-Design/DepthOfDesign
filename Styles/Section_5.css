@@ -14,6 +14,7 @@
   color: #333;
   margin: 0 auto;
   text-align: center;
+  width: 80vw;
 }
 .container h1 {
   text-transform: uppercase;
@@ -37,10 +38,6 @@ li span {
   font-size: 4rem;
   display: none;
   padding: 1rem;
-}
-
-.emoji {
-  padding: 0 0.25rem;
 }
 
 @media all and (max-width: 768px) {

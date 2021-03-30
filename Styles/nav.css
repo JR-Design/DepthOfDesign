@@ -57,9 +57,13 @@
 nav a {
   text-decoration: none;
   color: #fff;
+  transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
 }
 nav a:hover {
   color: #919bf0;
+  transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
 }
 
 .navbar-toggle {
@@ -161,7 +165,7 @@ nav a:hover {
 #leftnav .line {
   position: absolute;
   left: 1.5vw;
-  top: 35vh;
+  top: 30vh;
   width: 1px;
   height: 60vh;
   border-radius: 2px;
