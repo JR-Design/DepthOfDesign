@@ -1,7 +1,7 @@
 #section_2_1 {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto;
   align-items: center;
   height: 100vh;
 }
@@ -25,7 +25,7 @@
 }
 #s2bg img {
   max-width: 1440px;
-  max-height: 65vh;
+  max-height: 75vh;
 }
 #s2blur {
   position: absolute;
@@ -38,12 +38,9 @@
   text-align: left;
 }
 #class {
-  background-image: url(./Images/S2.svg);
+  background-image: url(/Images/S2.svg);
   background-repeat: no-repeat;
-  padding-left: 13.5%;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  padding-right: 10%;
+  padding: 5%;
   width: 35vw;
   max-width: 550px;
 }
@@ -63,7 +60,6 @@
 }
 .grid-item img {
   max-width: 70px;
-  max-height: 5vh;
 }
 #section_2_1 p {
   color: #fff;
