@@ -7,7 +7,6 @@ footer {
 }
 
 footer img {
-  margin: 0;
   position: relative;
   top: 50%;
   margin: 0 40px;
@@ -20,7 +19,34 @@ footer img {
 footer a:nth-child(2) img {
   filter: invert(0);
 }
+/* Tablet */
 @media all and (max-width: 1023px) {
 }
+/* Mobile */
 @media all and (max-width: 560px) {
+  footer {
+    max-height: 35vh;
+    height: 100vh;
+    display: grid;
+    grid-row: auto auto auto;
+    place-items: center;
+  }
+  h1#headline {
+    font-size: 3em;
+  }
+  footer img {
+    top: 0;
+    transform: translate(-50%, 0%);
+    margin: 0;
+    max-width: 100px;
+  }
+  span#days,
+  span#minutes,
+  span#hours,
+  span#seconds {
+    font-size: 2em;
+  }
+  footer a {
+    width: 10px;
+  }
 }

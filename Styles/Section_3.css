@@ -682,11 +682,12 @@ body .button {
   outline: none;
 
 }
+/* Tablet */
 @media only screen and (max-width: 1023px) {
 .section3_Body {
   padding-left: 120px;
   padding-bottom: 80px;
 }
 }
-
+/* Mobile */
 @media all and (max-width: 560px) {}

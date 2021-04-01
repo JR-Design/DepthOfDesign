@@ -11,7 +11,7 @@
   z-index: 0;
 }
 #event {
-  background-image: url('/Images/Background.svg');
+  background-image: url("/Images/Background.svg");
   background-repeat: no-repeat;
   max-width: 70vw;
   margin: 0 auto;
@@ -49,6 +49,7 @@
   width: 65vw;
   margin-left: 1%;
 }
+/* Tablet */
 @media only screen and (max-width: 1023px) {
   #s4overlay {
     background-size: 100% 100%;
@@ -72,6 +73,12 @@
     grid-row: 3;
   }
 }
-
+/* Mobile */
 @media all and (max-width: 560px) {
+  .eventchild p {
+    font-size: 1.5em;
+  }
+  .eventchild h3 {
+    font-size: 2em;
+  }
 }

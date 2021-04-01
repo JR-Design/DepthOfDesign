@@ -39,8 +39,10 @@ li span {
   display: none;
   padding: 1rem;
 }
+/* Tablet */
 @media all and (max-width: 1023px) {
 }
+/* Mobile */
 @media all and (max-width: 560px) {
   h1 {
     font-size: 5.5rem;
