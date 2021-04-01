@@ -38,7 +38,10 @@
   text-align: left;
 }
 #class {
+<<<<<<< Updated upstream
   background-image: url(/Images/S2.svg);
+=======
+>>>>>>> Stashed changes
   background-repeat: no-repeat;
   padding: 5%;
   width: 35vw;

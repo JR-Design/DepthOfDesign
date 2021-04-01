@@ -104,9 +104,10 @@
     justify-content: flex-start;
     min-width: 700px;
     padding-bottom: 10px;
+    padding-left: 60px;
   }
 
-.section1_Logo {}
+  .section1_Logo {}
   .section1_Body {
     margin-left: 30%;
   }

@@ -72,6 +72,7 @@ nav a:hover {
   -moz-transition: ease-out 0.5s;
 }
 
+
 .navbar-toggle {
   margin-top: 5vh;
   height: 50px;
@@ -184,8 +185,8 @@ nav a:hover {
   font-family: gotham;
   font-weight: regular;
   position: relative;
-  top: -25px;
-  left: -9px;
+  top: -33px;
+  left: -7px;
   color: var(--primary);
 }
 
@@ -210,6 +211,7 @@ nav a:hover {
   border-radius: 2px;
   background: var(--primary);
 }
+<<<<<<< Updated upstream
 @media only screen and (max-width: 1023px) {
   #sidenav {
     width: 60vw;
@@ -220,3 +222,29 @@ nav a:hover {
     width: 70vw;
   }
 }
+=======
+
+/*
+#progressbar::after {
+  content: '03';
+font-family: gotham;
+margin-left: 0.6vw;
+top: 4vh;
+position: absolute;
+
+color: var(--primary);
+}
+*/
+
+#progressBarNumber {
+  position: absolute;
+  /* margin-top: 4vh; */
+  height: 10vh;
+  font-family: gotham;
+  margin-left: 0.6vw;
+  top: 4.3vh;
+  position: absolute;
+  /* padding: 10px; */
+  color: var(--primary);
+}
+>>>>>>> Stashed changes
