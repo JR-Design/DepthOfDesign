@@ -5,6 +5,12 @@ function myFunction() {
     } else {
       x.style.right = "0px";
     }
+    var x = document.getElementById("leftclose");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
   }
   function nextStep() {
     if (document.getElementById("step1")) {

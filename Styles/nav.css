@@ -14,6 +14,12 @@
   transition: 0.4s;
   transition-timing-function: ease-in-out;
 }
+#leftclose {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: none;
+}
 .navtext {
   font-family: Gotham;
   font-style: normal;
@@ -211,6 +217,6 @@ nav a:hover {
 }
 @media only screen and (max-width: 768px) {
   #sidenav {
-    width: 100vw;
+    width: 70vw;
   }
 }
