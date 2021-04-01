@@ -73,7 +73,6 @@ nav a:hover {
   -moz-transition: ease-out 0.5s;
 }
 
-
 .navbar-toggle {
   margin-top: 5vh;
   height: 50px;
@@ -212,18 +211,6 @@ nav a:hover {
   border-radius: 2px;
   background: var(--primary);
 }
-<<<<<<< Updated upstream
-@media only screen and (max-width: 1023px) {
-  #sidenav {
-    width: 60vw;
-  }
-}
-@media only screen and (max-width: 560px) {
-  #sidenav {
-    width: 70vw;
-  }
-}
-=======
 
 /*
 #progressbar::after {
@@ -248,4 +235,13 @@ color: var(--primary);
   /* padding: 10px; */
   color: var(--primary);
 }
->>>>>>> Stashed changes
+@media only screen and (max-width: 1023px) {
+  #sidenav {
+    width: 60vw;
+  }
+}
+@media only screen and (max-width: 560px) {
+  #sidenav {
+    width: 70vw;
+  }
+}
