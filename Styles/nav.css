@@ -204,3 +204,13 @@ nav a:hover {
   border-radius: 2px;
   background: var(--primary);
 }
+@media only screen and (max-width: 1023px) {
+  #sidenav {
+    width: 60vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #sidenav {
+    width: 100vw;
+  }
+}
