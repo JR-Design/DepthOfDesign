@@ -19,6 +19,7 @@
   height: 100vh;
   position: fixed;
   display: none;
+  z-index: 99;
 }
 .navtext {
   font-family: Gotham;
@@ -217,7 +218,7 @@ nav a:hover {
     width: 60vw;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 560px) {
   #sidenav {
     width: 70vw;
   }
