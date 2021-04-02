@@ -10,6 +10,8 @@
 @import "Footer.css";
 .fullheight {
   min-height: 100vh;
+  margin: 0 auto;
+  /* width: 80vw; */
 }
 * {
   scroll-behavior: smooth;
