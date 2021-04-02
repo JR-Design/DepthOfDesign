@@ -22,7 +22,7 @@
   width: 90vw;
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: 60px;
+  /* padding-left: 60px; */
 }
 #s2bg img {
   max-width: 1440px;
@@ -60,6 +60,7 @@
   text-align: center;
 }
 .grid-item img {
+  width: 4.5vw;
   max-width: 70px;
 }
 #section_2_1 p {
