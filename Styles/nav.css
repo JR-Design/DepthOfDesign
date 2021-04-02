@@ -167,6 +167,8 @@ nav a:hover {
   margin-top: 5vh;
   margin-left: -0.1vw;
   max-width: 60px;
+  width: 10vw;
+  min-width: 30px;
 }
 
 #leftnav .line {
