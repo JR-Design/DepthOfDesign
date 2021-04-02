@@ -22,7 +22,7 @@
   /* right: 0; */
   /* position: absolute; */
   margin: 0 auto;
-  padding-top: 10vh;
+  /* padding-top: 10vh; */
   padding-bottom: 10vh;
 }
 .eventgrid {
@@ -76,6 +76,22 @@
   #event {
     background-image: url("/Images/Background_tablet.svg");
     /* background-repeat-y: repeat; */
+    background: var(--primary);
+  }
+  #event::before {
+    -webkit-transform: skewY(-2.5deg);
+    transform: skewY(-2.5deg);
+    background: inherit;
+    display: block;
+    position: absolute;
+    height: 50%;
+    /* background-color: black; */
+    z-index: -1;
+    content: '';
+    border-radius: 12px;
+    width: 70%;
+    margin: 0 auto;
+    transform-origin: -250vh 0;
   }
   #event::after {
     -webkit-transform: skewY(2.5deg);
@@ -83,12 +99,12 @@
     background: inherit;
     display: block;
     position: absolute;
-    height: 60%;
+    height: 40%;
     /* background-color: black; */
     z-index: -2;
     content: '';
-    /* border-radius: 12px; */
-    width: 100%;
+    border-radius: 12px;
+    width: 70%;
     margin: 0 auto;
     transform-origin: 500vh 0;
   }

@@ -45,7 +45,8 @@ li span {
 /* Mobile */
 @media all and (max-width: 560px) {
   h1 {
-    font-size: 5.5rem;
+    margin-top: 20px;
+    font-size: 5rem;
   }
 
   li {
