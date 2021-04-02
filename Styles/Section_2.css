@@ -66,8 +66,9 @@
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  /* width: 10vw; */
+  width: 44vw;
   /* min-width: 500px; */
+  max-width: 520px;
 }
 .grid-item {
   padding: 8px;

@@ -7,13 +7,18 @@
 #s4bg img {
   max-width: 1440px;
   max-height: 78.7vh;
-  opacity: 110%;
+  /* position: absolute; */
+  opacity: 100%;
   z-index: 0;
 }
 #event {
   background-image: url("/Images/Background.svg");
   background-repeat: no-repeat;
   max-width: 70vw;
+  /* min-width: 300px; */
+  /* left: 0; */
+  /* right: 0; */
+  /* position: absolute; */
   margin: 0 auto;
   padding-top: 10vh;
   padding-bottom: 10vh;
@@ -56,6 +61,9 @@
   }
   .section4 {
     height: 100%;
+  }
+  .eventgrid {
+    width: 40vw;
   }
   .eventchild {
     width: 35vw;
