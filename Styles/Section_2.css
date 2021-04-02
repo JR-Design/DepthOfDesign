@@ -5,6 +5,7 @@
   padding: 0px 10vw;
   /* margin-top: 30px; */
   justify-content: center;
+  /* align-content: center; */
   height: 100vh;
   /* place-items: center; */
 }
@@ -154,6 +155,7 @@
     grid-template-columns: repeat(auto-fill, 480px);
     /* height: 100vh; */
     padding: 0px 3vw;
+    
   }
 
   #about {
