@@ -3,6 +3,7 @@
 }
 #s4bg {
   padding-top: 25%;
+  /* padding-bottom: 5%; */
 }
 #s4bg img {
   max-width: 1440px;
@@ -14,6 +15,7 @@
 #event {
   background-image: url("/Images/Background.svg");
   background-repeat: no-repeat;
+  background-size: contain;
   max-width: 70vw;
   /* min-width: 300px; */
   /* left: 0; */
@@ -28,7 +30,7 @@
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
   margin: 0 auto;
-  /* width: 40vw; */
+  width: 60vw;
 }
 
 .eventchild {
@@ -64,15 +66,33 @@
     height: 100%;
   }
   .eventgrid {
-    width: 40vw;
+    grid-template-columns: auto;
+    justify-content: center;
+    width: 70vw;
   }
   .eventchild {
-    width: 35vw;
+    width: 53vw;
   }
   #event {
     background-image: url("/Images/Background_tablet.svg");
-
+    /* background-repeat-y: repeat; */
   }
+  #event::after {
+    -webkit-transform: skewY(2.5deg);
+    transform: skewY(2.5deg);
+    background: inherit;
+    display: block;
+    position: absolute;
+    height: 60%;
+    /* background-color: black; */
+    z-index: -2;
+    content: '';
+    /* border-radius: 12px; */
+    width: 100%;
+    margin: 0 auto;
+    transform-origin: 500vh 0;
+  }
+
   #child1 {
     grid-column: 1;
     grid-row: 1;
@@ -89,7 +109,7 @@
 /* Mobile */
 @media all and (max-width: 560px) {
   .eventchild p {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   .eventchild h3 {
     font-size: 2em;
