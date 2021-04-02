@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  padding: 0 10vw;
+  padding: 0px 10vw;
   align-items: center;
   height: 100vh;
   justify-content: center;
@@ -57,7 +57,7 @@
   /* position: absolute; */
   z-index: 100;
   margin: 0 auto;
-  max-width: 550px;
+  max-width: 500px;
 }
 #about h1,
 #about p {
