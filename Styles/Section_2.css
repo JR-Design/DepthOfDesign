@@ -25,7 +25,7 @@
 #s2bg {
   position: absolute;
   z-index: -1;
-  width: 90vw;
+  width: 87vw;
   max-width: 1440px;
   margin: auto;
   min-height: 510px;
@@ -49,9 +49,9 @@
 #about {
   z-index: 1;
   color: #fff;
-  width: 80vw;
+  width: 75vw;
   /* margin-top: -140px; */
-  min-width: 300px;
+  min-width: 280px;
   max-width: 500px;
   margin: 0 auto;
   text-align: left;
@@ -115,6 +115,10 @@
     max-width: 60px;
   }
 
+  #s2bg {
+    width: 70vw;
+  }
+
 
 
 
@@ -125,6 +129,12 @@
   #section_2 {
     margin-top: 10vh;
   }
+
+
+  #s2bg {
+    width: 76vw;
+  }
+
   .s2item1 {
     grid-column: 1;
     grid-row: 1;
@@ -170,8 +180,10 @@
   }
 
   #about .bodybig {
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
 
   
 }
+
+
