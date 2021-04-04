@@ -87,6 +87,8 @@
   margin-top: 27vh;
   /* top: 0; */
   max-width: 410px;
+  width: 90%;
+  border-radius: 25px;
   height: 200px;
 }
 

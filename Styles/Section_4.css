@@ -16,7 +16,7 @@
   background-image: url("/Images/Background.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  max-width: 70vw;
+  max-width: 80vw;
   /* min-width: 300px; */
   /* left: 0; */
   /* right: 0; */
@@ -89,9 +89,9 @@
     z-index: -1;
     content: '';
     border-radius: 12px;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
-    transform-origin: -250vh 0;
+    transform-origin: -150vh 0;
   }
   #event::after {
     -webkit-transform: skewY(2.5deg);
@@ -104,7 +104,7 @@
     z-index: -2;
     content: '';
     border-radius: 12px;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     transform-origin: 500vh 0;
   }
