@@ -162,7 +162,7 @@
 @media only screen and (max-width: 560px) {
 
   #section_2 {
-    margin-top: 10vh;
+    margin-top: 280px;
   }
 
 
@@ -206,7 +206,7 @@
     grid-template-columns: repeat(auto-fill, 480px);
     /* height: 100vh; */
     padding: 0px 3vw;
-    margin-top: 40vh;
+    margin-top: 400px;
   }
 
   #about {
