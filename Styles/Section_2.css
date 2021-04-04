@@ -67,7 +67,6 @@
   margin: 0 auto;
   padding-top: 35px;
   padding-bottom: 35px;
-  /* margin-right: 10px; */
   max-width: 520px;
 }
 #about h1,
@@ -251,7 +250,7 @@
     border-radius: 12px;
     width: 100%;
     margin: 0 auto;
-    transform-origin: -690vh 0;
+    transform-origin: -960vh 0;
   }
 
   
