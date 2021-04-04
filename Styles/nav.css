@@ -242,10 +242,16 @@ color: var(--primary);
   #sidenav {
     width: 60vw;
   }
+  .navbar-toggle {
+    right: 30px;
+  }
 }
 /* Mobile */
 @media only screen and (max-width: 560px) {
   #sidenav {
     width: 70vw;
+  }
+  .navbar-toggle {
+    right: 10px;
   }
 }
