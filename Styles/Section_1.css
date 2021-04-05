@@ -117,7 +117,7 @@
   .section1 div {
     /* text-align: left; */
     justify-content: flex-start;
-    min-width: 550px;
+    min-width: 500px;
     padding-bottom: 10px;
   }
   .section1_Body {
