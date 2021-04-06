@@ -710,6 +710,8 @@ body .button {
 
 
 
+
+
 }
 /* Mobile */
 @media all and (max-width: 560px) {
@@ -723,6 +725,9 @@ body .button {
     height: 240px;
     padding-bottom: 170px;
     max-width: 350px;
+  }
+  .Form_Rectangle {
+    display: none;
   }
 
 
