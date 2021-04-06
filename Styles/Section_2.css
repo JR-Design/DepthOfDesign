@@ -6,8 +6,8 @@
   margin-top: 280px;
   justify-content: center;
   /* align-content: center; */
-  min-height: 500px;
-  height: 100vh;
+  min-height: 510px;
+  height: 90vh;
   place-items: center;
 }
 .s2item1 {
@@ -61,19 +61,17 @@
   text-align: left;
 }
 #class {
-  background-image: url(/Images/S2.svg);
+  background-image: url(/Images/SectionTwo.svg);
   background-repeat: no-repeat;
   padding: 5%;
   width: 32vw;
-  min-width: 250px;
+  min-width: 290px;
   /* position: absolute; */
   z-index: 100;
   margin: 0 auto;
   padding-top: 35px;
   padding-bottom: 35px;
   max-width: 480px;
-  /* min-width: 280px; */
-  /* max-width: 500px; */
 }
 #about h1,
 #about p {
@@ -81,32 +79,41 @@
 }
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
   width: 34vw;
-  min-width: 290px;
-  grid-gap: 6px;
+  min-width: 300px;
+  /* place-content: center; */
+  justify-content: space-evenly;
+  grid-gap: 16px 6px;
   max-width: 520px;
 }
 .grid-item {
   /* padding: 8px; */
   font-size: 30px;
-  min-width: 40px;
-  width: 50%;
-  max-width: 70px;
+  /* min-width: 60px; */
+  /* width: 50%; */
+  /* max-width: 70px; */
   text-align: center;
 }
 .grid-item img {
   width: 14.5vw;
   min-width: 40px;
-  max-width: 60px;
+  max-width: 70px;
 }
 #section_2_1 p {
   color: #fff;
   margin-top: 4px;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 /* Tablet */
 @media only screen and (max-width: 1023px) {
+
+
+  #section_2_1 {
+    height: 100vh;
+  }
+
   .s2item1 {
     grid-column: 1;
     grid-row: 1;
@@ -116,9 +123,9 @@
   .s2item2 {
     grid-column: 1;
     grid-row: 2;
-    position: absolute;
+    /* position: absolute; */
     left: 0;
-    margin-top: -260px;
+    margin-top: -220px;
     right: 0;
   }
 
@@ -133,6 +140,7 @@
 
   #class .bodybig {
     color: black;
+    margin-bottom: 20px;
   }
 
 
@@ -175,6 +183,10 @@
 /* Mobile */
 @media only screen and (max-width: 560px) {
 
+  #section_2_1 {
+    height: 100vh;
+  }
+
   #section_2 {
     margin-top: 280px;
   }
@@ -202,8 +214,8 @@
     grid-row: 2;
     /* top: 0; */
     /* bottom: 0; */
-    margin-top: -330px;
-    position: absolute;
+    /* margin-top: -330px; */
+    /* position: absolute; */
     min-width: 260px;
     width: 100vw;
     max-width: 500px;
@@ -211,7 +223,7 @@
     right: 0;
   }
   .grid-container {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
   }
 
 
@@ -265,7 +277,7 @@
     border-radius: 12px;
     width: 100%;
     margin: 0 auto;
-    transform-origin: -960vh 0;
+    transform-origin: -640vh 0;
   }
 
   

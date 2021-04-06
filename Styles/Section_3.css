@@ -262,9 +262,9 @@
 }
 
 /* form starting stylings ------------------------------- */
-.form_input_element 			  { 
-  position:relative; 
-  margin-bottom:45px; 
+.form_input_element 			  {
+  position:relative;
+  margin-bottom:45px;
   margin-left: 20%;
 }
 .form_input_element input 				{
@@ -708,6 +708,10 @@ body .button {
   width: 500px;
 }
 
+.form_input_element {
+  margin-left: 10%;
+}
+
 
 
 
@@ -729,6 +733,11 @@ body .button {
   .Form_Rectangle {
     display: none;
   }
+
+  .form_input_element {
+    margin-left: 10%;
+  }
+  
 
 
 

@@ -39,6 +39,9 @@ function backPage3() {
     step4.style.display = 'none';
 }
 
+
+//Delay was pushed to lower function titled "submitForm()" ------ I commented it out incase we have to revert
+/*
 function nextPage4() {
         setTimeout(function(){
 
@@ -46,10 +49,34 @@ function nextPage4() {
         step5.style.display = 'grid';
     },2000);
 };
+*/
+
+function nextPage4() {
+    step4.style.display = 'none';
+    step5.style.display = 'grid';
+
+};
 
 function backPage4() {
     step4.style.display = 'grid';
     step5.style.display = 'none';
+}
+
+
+//JAVASCRIPT FOR TO DELAY SUBMISSION
+function submitForm() {
+
+    nextPage4();
+
+    setTimeout(function(){
+        document.getElementById("mc-embedded-subscribe-form").submit()
+    },1000);
+    
+    
+}
+
+document.getElementById('mc-embedded-subscribe').onclick = function() {
+    setTimeout(submitForm, 2000); 
 }
 
 
@@ -88,8 +115,6 @@ function pageDepth() {
 //Function for left side content element
 //const progressbar = document.getElementById("progressbar");
 //console.log(progressbar.style);
-
-
 
 
 
