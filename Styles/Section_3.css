@@ -688,7 +688,7 @@ input[type=radio] + label {
 
 
 body .button {
-  /* background: white; */
+  background: var(--light_grey);
   border: 1px solid var(--primary);
   margin: 0 12px;
   padding: 10px;
