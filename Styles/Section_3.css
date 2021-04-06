@@ -176,13 +176,12 @@
 .section3 a {
   text-decoration: none;
 }
-#rsvpreg {
-  /* margin-left: 120px; */
-  /* text-align: center; */
-}
-/* Form */
 
 
+
+
+
+/*================ Form ================*/
 .form_area {
   display: grid;
   grid-template-areas:
@@ -280,6 +279,10 @@
   border-bottom:0.5px solid #919bf0;
 }
 input:focus 		{ outline:none; }
+
+.form_progress_indicator {
+  width: 100%
+}
 
 /* LABEL ======================================= */
 .form_input_element label 				 {
@@ -685,12 +688,11 @@ input[type=radio] + label {
 
 
 body .button {
-  background: white;
+  /* background: white; */
   border: 1px solid var(--primary);
   margin: 0 12px;
   padding: 10px;
   outline: none;
-
 }
 /* Tablet */
 @media only screen and (max-width: 1023px) {
@@ -711,14 +713,18 @@ body .button {
 }
 
 .form_input_element {
-  margin-left: 10%;
+  margin-left: 20%;
 }
 
+}
 
-
-
+@media only screen and (max-width: 680px) {
+.Form_Rectangle {
+  display: none;
+}
 
 }
+
 /* Mobile */
 @media all and (max-width: 560px) {
 
@@ -732,6 +738,7 @@ body .button {
     padding-bottom: 170px;
     max-width: 350px;
   }
+
   .Form_Rectangle {
     display: none;
   }
@@ -740,6 +747,9 @@ body .button {
     margin-left: 10%;
   }
   
+  .form_progress_indicator {
+    width: 80%
+  }
 
 
 

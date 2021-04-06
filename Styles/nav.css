@@ -175,10 +175,10 @@ nav a:hover {
   position: absolute;
   left: 1.5vw;
   top: 30vh;
-  width: 1px;
+  width: 2px;
   height: 60vh;
   border-radius: 2px;
-  background: var(--primary);
+  background: #495BFD20;
 }
 
 #leftnav .line::before {
@@ -208,7 +208,7 @@ nav a:hover {
   left: 1.45vw;
   margin-top: 30vh;
   margin-bottom: 20vh;
-  width: 3px;
+  width: 2px;
   height: 10vh;
   border-radius: 2px;
   background: var(--primary);
