@@ -6,6 +6,7 @@
   justify-content: center;
   justify-items: center;
   /* height: 200%; */
+  /* border: 1px black solid; */
   background-color: var(--light_grey);
   display: grid;
   grid-template-columns: repeat(auto-fill, 720px);
@@ -27,6 +28,7 @@
   height: 60%;
   /* background-color: black; */
   z-index: -2;
+  /* border: 1px dotted var(--primary); */
   content: '';
   /* border-radius: 12px; */
   width: 100%;
