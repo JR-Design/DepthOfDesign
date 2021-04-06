@@ -12,6 +12,7 @@
   grid-template-columns: repeat(auto-fill, 720px);
 }
 
+
 #section3_rsvp {
   background-color: var(--light_grey);
   width: 100vw;
@@ -124,7 +125,7 @@
   padding-bottom: 150px;
 }
 .section3_Body h1 {
-  margin-top: 105px;
+  margin-top: 85px;
   margin-bottom: 25px;
 }
 

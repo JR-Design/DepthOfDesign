@@ -5,11 +5,13 @@ var step3 = document.getElementById("step3");
 var step4 = document.getElementById("step4");
 var step5 = document.getElementById("step5");
 
+
 step1.style.display = 'grid';
 step2.style.display = 'none';
 step3.style.display = 'none';
 step4.style.display = 'none';
 step5.style.display = 'none';
+
 
 function nextPage1() {
     step1.style.display = 'none';
@@ -33,6 +35,7 @@ function backPage2() {
 function nextPage3() {
     step3.style.display = 'none';
     step4.style.display = 'grid';
+    
 }
 function backPage3() {
     step3.style.display = 'grid';
@@ -54,7 +57,6 @@ function nextPage4() {
 function nextPage4() {
     step4.style.display = 'none';
     step5.style.display = 'grid';
-
 };
 
 function backPage4() {
@@ -64,16 +66,32 @@ function backPage4() {
 
 
 //JAVASCRIPT FOR TO DELAY SUBMISSION
+
+
+
+
+/*
+    // Add the novalidate attribute when the JS loads
+    var forms = document.querySelectorAll('.validate');
+    for (var i = 0; i < forms.length; i++) {
+    forms[i].setAttribute('novalidate', true);
+    };
+*/
+
 function submitForm() {
 
-    nextPage4();
+   
 
     setTimeout(function(){
+        nextPage4();
         document.getElementById("mc-embedded-subscribe-form").submit()
     },1000);
     
-    
+   
 }
+
+
+
 
 document.getElementById('mc-embedded-subscribe').onclick = function() {
     setTimeout(submitForm, 2000); 
