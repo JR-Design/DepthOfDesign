@@ -80,12 +80,12 @@ function backPage4() {
 
 function submitForm() {
 
-   
+
+    nextPage4();
 
     setTimeout(function(){
-        nextPage4();
         document.getElementById("mc-embedded-subscribe-form").submit()
-    },1000);
+    },2500);
     
    
 }
@@ -95,6 +95,7 @@ function submitForm() {
 
 document.getElementById('mc-embedded-subscribe').onclick = function() {
     setTimeout(submitForm, 2000); 
+    
 }
 
 
