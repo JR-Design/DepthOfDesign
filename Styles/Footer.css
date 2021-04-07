@@ -12,8 +12,8 @@ footer {
 
 footer img {
   position: relative;
-  top: 50%;
-  margin: 0 40px;
+  /* top: 50%; */
+  margin: 0 2vw;
   filter: saturate(100%);
   /* transform: translate(-50%, -50%); */
   max-height: 10vh;
@@ -24,6 +24,7 @@ footer div {
   margin: 0 auto;
   min-width: 300px;
   /* height: 65vh; */
+  max-width: 300px;
   display: grid;
   grid-auto-flow: column;
   grid-row: auto auto auto;
