@@ -87,16 +87,16 @@
     transform: skewY(
       -2.5deg
       );
-          background: inherit;
-          display: block;
-          position: absolute;
-          height: 100%;
-          z-index: -1;
-          content: "";
-          border-radius: 12px;
-          width: 70vw;
-          margin: 0px auto;
-          transform-origin: -130vh 0px;
+    background: inherit;
+    display: block;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    content: "";
+    border-radius: 12px;
+    width: 70vw;
+    margin: 0px auto;
+    transform-origin: -130vh 0px;
   }
   .eventgrid::after {
     transform: skewY(
