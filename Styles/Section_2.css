@@ -9,8 +9,9 @@
   margin-top: 280px;
   justify-content: center;
   /* align-content: center; */
-  min-height: 510px;
-  height: 90vh;
+  min-height: 750px;
+  max-height: 900px;
+  height: 83vh;
   place-items: center;
 }
 .s2item1 {
@@ -38,12 +39,12 @@
   min-height: 510px;
   left: 0;
   right: 0;
-  /* padding-left: 60px; */
 }
+
 #s2bg img {
   max-width: 1100px;
   max-height: 75vh;
-  min-height: 500px;
+  min-height: 520px;
   position: absolute;
   left: 0;
   margin-top: 10;
@@ -88,8 +89,8 @@
   min-width: 300px;
   /* place-content: center; */
   justify-content: space-evenly;
-  grid-gap: 16px 6px;
-  max-width: 520px;
+  grid-gap: 16px;
+  max-width: 490px;
 }
 .grid-item {
   /* padding: 8px; */
@@ -115,7 +116,7 @@
 
 
   #section_2_1 {
-    height: 120vh;
+    height: 980px;
   }
 
   .s2item1 {
@@ -149,8 +150,12 @@
 
 
   #s2bg::before {
-    -webkit-transform: skewY(2.5deg);
-    transform: skewY(2.5deg);
+    -webkit-transform: skewY(
+    2.5deg
+    );
+    transform: skewY(
+    2.5deg
+    );
     background: inherit;
     display: block;
     position: absolute;
@@ -165,8 +170,12 @@
   }
 
   #s2bg::after {
-    -webkit-transform: skewY(2.5deg);
-    transform: skewY(2.5deg);
+    -webkit-transform: skewY(
+      2.5deg
+      );
+          transform: skewY(
+      2.5deg
+      );
     background: inherit;
     display: block;
     position: absolute;
@@ -177,7 +186,7 @@
     border-radius: 12px;
     width: 100%;
     margin: 0 auto;
-    transform-origin: -520vh 0;
+    transform-origin: -690vh 0;
   }
 
 
@@ -188,7 +197,10 @@
 @media only screen and (max-width: 560px) {
 
   #section_2_1 {
-    height: 100vh;
+    grid-template-columns: repeat(auto-fill, 480px);
+    height: 130vh;
+    padding: 0px 3vw;
+    margin-top: 150px;
   }
 
   #section_2 {
@@ -231,13 +243,6 @@
   }
 
 
-  #section_2_1 {
-    /* min-height: 100vh; */
-    grid-template-columns: repeat(auto-fill, 480px);
-    height: 130vh;
-    padding: 0px 3vw;
-    margin-top: 150px;
-  }
 
   #about {
     padding-top: 34px;
@@ -255,13 +260,16 @@
 
 
   #s2bg::before {
-    -webkit-transform: skewY(2.5deg);
-    transform: skewY(2.5deg);
+    -webkit-transform: skewY(
+    2.5deg
+    );
+    transform: skewY(
+    2.5deg
+    );
     background: inherit;
     display: block;
     position: absolute;
     height: 60%;
-    /* background-color: black; */
     z-index: -2;
     content: '';
     border-radius: 12px;
@@ -271,13 +279,16 @@
   }
 
   #s2bg::after {
-    -webkit-transform: skewY(2.5deg);
-    transform: skewY(2.5deg);
+    -webkit-transform: skewY(
+    2.5deg
+    );
+    transform: skewY(
+    2.5deg
+    );
     background: inherit;
     display: block;
     position: absolute;
     height: 60%;
-    /* background-color: black; */
     z-index: 9;
     content: '';
     border-radius: 12px;

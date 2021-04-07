@@ -1,5 +1,5 @@
 .section4 {
-  height: 100vh;
+  min-height: 100vh;
 }
 #s4bg {
   padding-top: 25%;
@@ -7,7 +7,7 @@
 }
 #s4bg img {
   max-width: 1440px;
-  max-height: 78.7vh;
+  max-height: 680px;
   /* position: absolute; */
   opacity: 100%;
   z-index: 0;
@@ -19,8 +19,11 @@
   max-width: 80vw;
   /* min-width: 300px; */
   /* left: 0; */
+  padding-top: 160px;
   /* right: 0; */
+  height: 510px;
   /* position: absolute; */
+  margin-top: -30px;
   margin: 0 auto;
   /* padding-top: 10vh; */
   padding-bottom: 10vh;
@@ -30,7 +33,7 @@
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
   margin: 0 auto;
-  width: 60vw;
+  width: 73vw;
 }
 
 .eventchild {
@@ -54,7 +57,7 @@
   max-width: 1340px !important;
   margin-top: -8%;
   width: 81vw;
-  margin-left: 1%;
+  margin-left: 0%;
 }
 /* Tablet */
 @media only screen and (max-width: 1023px) {
@@ -63,22 +66,24 @@
     display: none;
   }
   .section4 {
-    height: 100%;
+    /* height: 113vh; */
+    min-height: 1300px;
   }
   .eventgrid {
     grid-template-columns: auto;
     justify-content: center;
     width: 70vw;
+    background: var(--primary);
   }
   .eventchild {
     width: 53vw;
   }
   #event {
-    background-image: url("/Images/Background_tablet.svg");
+    /* background-image: url("/Images/Background_tablet.svg"); */
     /* background-repeat-y: repeat; */
-    background: var(--primary);
+    /* background: var(--primary); */
   }
-  #event::before {
+  .eventgrid::before {
     -webkit-transform: skewY(-2.5deg);
     transform: skewY(-2.5deg);
     background: inherit;
@@ -89,11 +94,11 @@
     z-index: -1;
     content: '';
     border-radius: 12px;
-    width: 80%;
+    width: 70vw;
     margin: 0 auto;
-    transform-origin: -150vh 0;
+    transform-origin: -130vh 0;
   }
-  #event::after {
+  .eventgrid::after {
     -webkit-transform: skewY(2.5deg);
     transform: skewY(2.5deg);
     background: inherit;
@@ -104,9 +109,9 @@
     z-index: -2;
     content: '';
     border-radius: 12px;
-    width: 80%;
+    width: 70vw;
     margin: 0 auto;
-    transform-origin: 500vh 0;
+    transform-origin: -1300vh 0;
   }
 
   #child1 {
