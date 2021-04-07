@@ -203,14 +203,14 @@
 
   #s2bg img {
     max-width: 1100px;
-    min-height: 520px;
+    min-height: 200px;
     position: absolute;
     left: 0;
     margin-top: 10;
     right: 0;
     margin: auto;
   }
-  
+
   #section_2 {
     margin-top: 120px;
     margin-bottom: 120px;
