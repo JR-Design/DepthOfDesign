@@ -79,7 +79,7 @@
     width: 53vw;
   }
   #event {
-    /* background-image: url("/Images/Background_tablet.svg"); */
+    background-image: url();
     /* background-repeat-y: repeat; */
     /* background: var(--primary); */
   }
@@ -89,7 +89,7 @@
     background: inherit;
     display: block;
     position: absolute;
-    height: 50%;
+    height: 100%;
     /* background-color: black; */
     z-index: -1;
     content: '';
@@ -104,14 +104,14 @@
     background: inherit;
     display: block;
     position: absolute;
-    height: 40%;
+    height: 100%;
     /* background-color: black; */
     z-index: -2;
     content: '';
     border-radius: 12px;
     width: 70vw;
     margin: 0 auto;
-    transform-origin: -1520vh 0;
+    transform-origin: 60vh 0;
   }
 
   #child1 {
