@@ -3,6 +3,7 @@
   min-height: 30vh;
   margin: 0 auto;
   max-width: 1440px;
+  /* max-width: 300px; */
   justify-content: center;
   justify-items: center;
   /* height: 200%; */
@@ -747,7 +748,7 @@ body .button {
     z-index: 10;
     height: 240px;
     padding-bottom: 170px;
-    max-width: 350px;
+    max-width: 320px;
   }
 
   .Form_Rectangle {

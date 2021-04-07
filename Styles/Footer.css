@@ -18,6 +18,8 @@ footer img {
   /* transform: translate(-50%, -50%); */
   max-height: 10vh;
   /* filter: invert(100%); */
+  max-width: 130px;
+  max-height: 70px;
 }
 
 footer div {
@@ -43,7 +45,6 @@ footer a:nth-child(2) img {
   footer {
     max-height: 65vh;
     height: 100vh;
-    display: grid;
     grid-row: auto auto auto;
     place-items: center;
   }
@@ -65,7 +66,8 @@ footer a:nth-child(2) img {
     top: 0;
     transform: translate(-50%, 0%);
     margin: auto;
-    max-width: 100px;
+    max-width: 150px;
+    max-height: 100px;
   }
   span#days,
   span#minutes,
