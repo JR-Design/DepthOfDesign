@@ -175,7 +175,7 @@ nav a:hover {
   width: 2px;
   height: 60vh;
   border-radius: 2px;
-  background: #495BFD20;
+  background: #495bfd20;
 }
 
 #leftnav .line::before {
@@ -254,7 +254,7 @@ color: var(--primary);
   #navsocial {
     margin-left: 50px;
   }
-  .navbar-toggle-close{
+  .navbar-toggle-close {
     right: 25px;
   }
 }
@@ -278,7 +278,7 @@ color: var(--primary);
   #navsocial {
     margin-left: 12px;
   }
-  .navbar-toggle-close{
+  .navbar-toggle-close {
     right: 12px;
   }
 }
