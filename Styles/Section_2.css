@@ -17,7 +17,7 @@
 .s2item1 {
   grid-column: 1;
   grid-row: 1;
-  /* padding-left: 60px; */
+  padding-right: 20px;
   width: 100%;
   min-width: 280px;
   max-width: 500px;
@@ -114,8 +114,6 @@
 }
 /* Tablet */
 @media only screen and (max-width: 1023px) {
-
-
   #section_2_1 {
     min-height: 1140px;
   }
@@ -152,21 +150,16 @@
     margin-bottom: 20px;
   }
 
-
   #s2bg::before {
-    -webkit-transform: skewY(
-    2.5deg
-    );
-    transform: skewY(
-    2.5deg
-    );
+    -webkit-transform: skewY(2.5deg);
+    transform: skewY(2.5deg);
     background: inherit;
     display: block;
     position: absolute;
     height: 60%;
     /* background-color: black; */
     z-index: -2;
-    content: '';
+    content: "";
     /* border-radius: 12px; */
     width: 100%;
     margin: 0 auto;
@@ -174,32 +167,23 @@
   }
 
   #s2bg::after {
-    -webkit-transform: skewY(
-      2.5deg
-      );
-    transform: skewY(
-      2.5deg
-      );
+    -webkit-transform: skewY(2.5deg);
+    transform: skewY(2.5deg);
     background: inherit;
     display: block;
     position: absolute;
     height: 60%;
     background-color: var(--primary);
     z-index: -2;
-    content: '';
+    content: "";
     border-radius: 12px;
     width: 100%;
     margin: 0 auto;
     transform-origin: -700vh 0;
   }
-
-
-
-
 }
 /* Mobile */
 @media only screen and (max-width: 560px) {
-
   #section_2_1 {
     grid-template-columns: repeat(auto-fill, 480px);
     min-height: 140vh;
@@ -211,7 +195,6 @@
     margin-top: 120px;
     margin-bottom: 120px;
   }
-
 
   #s2bg {
     width: 90vw;
@@ -246,8 +229,6 @@
     grid-template-columns: auto auto auto auto;
   }
 
-
-
   #about {
     padding-top: 34px;
   }
@@ -262,20 +243,15 @@
     margin-top: 0.001px;
   }
 
-
   #s2bg::before {
-    -webkit-transform: skewY(
-    -2.5deg
-    );
-    transform: skewY(
-    -2.5deg
-    );
+    -webkit-transform: skewY(-2.5deg);
+    transform: skewY(-2.5deg);
     background: inherit;
     display: block;
     position: absolute;
     height: 60%;
     z-index: -2;
-    content: '';
+    content: "";
     border-radius: 12px;
     width: 100%;
     margin: 0 auto;
@@ -283,25 +259,17 @@
   }
 
   #s2bg::after {
-    -webkit-transform: skewY(
-    2.5deg
-    );
-    transform: skewY(
-    2.5deg
-    );
+    -webkit-transform: skewY(2.5deg);
+    transform: skewY(2.5deg);
     background: inherit;
     display: block;
     position: absolute;
     height: 60%;
     z-index: 9;
-    content: '';
+    content: "";
     border-radius: 12px;
     width: 100%;
     margin: 0 auto;
     transform-origin: -970vh 0;
   }
-
-  
 }
-
-
