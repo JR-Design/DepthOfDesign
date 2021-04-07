@@ -43,7 +43,6 @@
 
 #s2bg img {
   max-width: 1100px;
-  min-height: 520px;
   position: absolute;
   left: 0;
   margin-top: 10;
@@ -136,6 +135,16 @@
     width: 100%;
   }
 
+  #s2bg img {
+    max-width: 1100px;
+    min-height: 300px;
+    position: absolute;
+    left: 0;
+    margin-top: 10;
+    right: 0;
+    margin: auto;
+  }
+
   .grid-item img {
     max-width: 90px;
     width: 11.5vw;
@@ -191,6 +200,17 @@
     margin-top: 150px;
   }
 
+
+  #s2bg img {
+    max-width: 1100px;
+    min-height: 520px;
+    position: absolute;
+    left: 0;
+    margin-top: 10;
+    right: 0;
+    margin: auto;
+  }
+  
   #section_2 {
     margin-top: 120px;
     margin-bottom: 120px;
