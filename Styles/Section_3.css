@@ -154,7 +154,7 @@
   box-sizing: border-box;
   width: fit-content;
   border-radius: 2px;
-  background-color: #fff;
+  /* background-color: #fff; */
   font-family: Gotham;
   font-style: normal;
   font-weight: 400;
