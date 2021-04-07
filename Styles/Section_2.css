@@ -36,7 +36,7 @@
   width: 87vw;
   max-width: 1440px;
   margin: auto;
-  min-height: 510px;
+  min-height: 380px;
   left: 0;
   right: 0;
 }
@@ -68,14 +68,14 @@
   background-image: url(/Images/SectionTwo.svg);
   background-repeat: no-repeat;
   padding: 5%;
-  width: 32vw;
+  width: 70vw;
   min-width: 290px;
   /* position: absolute; */
   z-index: 100;
   margin: 0 auto;
   padding-top: 35px;
   padding-bottom: 35px;
-  max-width: 480px;
+  max-width: 550px;
 }
 #about h1,
 #about p {
@@ -85,12 +85,13 @@
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  width: 34vw;
-  min-width: 300px;
+  width: 100%;
+  min-width: 270px;
   /* place-content: center; */
   justify-content: space-evenly;
   grid-gap: 16px;
-  max-width: 490px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .grid-item {
   /* padding: 8px; */
@@ -116,7 +117,7 @@
 
 
   #section_2_1 {
-    height: 980px;
+    min-height: 1140px;
   }
 
   .s2item1 {
@@ -132,11 +133,14 @@
     left: 0;
     margin-top: -220px;
     right: 0;
+    min-width: 280px;
+    max-width: 590px;
+    width: 100%;
   }
 
   .grid-item img {
-    max-width: 60px;
-    width: 14.5vw;
+    max-width: 90px;
+    width: 11.5vw;
   }
 
   #s2bg {
@@ -173,7 +177,7 @@
     -webkit-transform: skewY(
       2.5deg
       );
-          transform: skewY(
+    transform: skewY(
       2.5deg
       );
     background: inherit;
@@ -186,7 +190,7 @@
     border-radius: 12px;
     width: 100%;
     margin: 0 auto;
-    transform-origin: -690vh 0;
+    transform-origin: -700vh 0;
   }
 
 
@@ -261,10 +265,10 @@
 
   #s2bg::before {
     -webkit-transform: skewY(
-    2.5deg
+    -2.5deg
     );
     transform: skewY(
-    2.5deg
+    -2.5deg
     );
     background: inherit;
     display: block;
@@ -275,7 +279,7 @@
     border-radius: 12px;
     width: 100%;
     margin: 0 auto;
-    transform-origin: 111vh 0;
+    transform-origin: -99vh 0;
   }
 
   #s2bg::after {

@@ -725,6 +725,7 @@ body .button {
   display: none;
 }
 
+
 }
 
 /* Mobile */
@@ -751,6 +752,10 @@ body .button {
   
   .form_progress_indicator {
     width: 80%
+  }
+
+  .grid-container {
+    width: 90%;
   }
 
 
