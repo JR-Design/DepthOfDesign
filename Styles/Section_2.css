@@ -63,7 +63,7 @@
   text-align: left;
 }
 #class {
-  background-image: url(/Images/SectionTwo.svg);
+  background-image: url('../Images/SectionTwo.svg');
   background-repeat: no-repeat;
   padding: 5%;
   width: 70vw;
