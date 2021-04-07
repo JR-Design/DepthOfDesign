@@ -111,7 +111,7 @@
     border-radius: 12px;
     width: 70vw;
     margin: 0px auto;
-    transform-origin: 0vh 0px;
+    transform-origin: -710vh 0px;
   }
 
   #child1 {
@@ -134,5 +134,8 @@
   }
   .eventchild h3 {
     font-size: 2em;
+  }
+  .eventgrid::after {
+    transform-origin: -630vh 0px;
   }
 }
